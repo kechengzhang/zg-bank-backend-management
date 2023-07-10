@@ -1,0 +1,15 @@
+
+\
+java:S2184$"FCast one of the operands of this multiplication operation to a "long".(–‡û˜
+K
+java:S2209$"5Change this instance-reference to a static reference.(–‡û˜
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ñ·Ðîúÿÿÿÿ
+>
+java:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+v
+java:S1217#"`Call the method Thread.start() to execute the content of the run() method in a dedicated thread.(—ú÷Ú
+>
+java:S1148&"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+\
+java:S2142%"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€

@@ -1,0 +1,46 @@
+
+[	java:S125"<This block of commented-out lines of code should be removed.(µ¢€ùøÿÿÿÿ8 ï÷Ò’1
+l
+java:S1192"LDefine a constant instead of duplicating this literal "composePath" 7 times.(ĞÎÓØÿÿÿÿÿ8îüÏ1
+K
+java:S1068"0Remove this unused "composeRules" private field.(»ŒçĞ8ì¸©Ó’1
+Q
+java:S1068"6Remove this unused "messagePushService" private field.(ÒÓƒÙ8½ôø’1
+[	java:S125"<This block of commented-out lines of code should be removed.(à‰üÿÿÿÿ8ì¸©Ó’1
+U	java:S125"<This block of commented-out lines of code should be removed.(Š×ü/8 ï÷Ò’1
+ª
+java:S1319"‰The type of the "uploadFileMap" object should be an interface such as "ConcurrentMap" rather than the implementation "ConcurrentHashMap".(Ô çúûÿÿÿÿ8îüÏ1
+6
+java:S1643"Use a StringBuilder instead.(Ç×Ãz8Ô©ğÒ’1
+a	java:S107"BConstructor has 12 parameters, which is greater than 7 authorized.(ì­¼üÿÿÿÿ8îüÏ1
+R
+java:S1172"2Remove this unused method parameter "callBackUrl".(ï¶¸şÿÿÿÿÿ8îüÏ1
+O
+java:S1068"/Remove this unused "currentTime" private field.(ºëµ³ıÿÿÿÿ8ì¸©Ó’1
+V	java:S125"<This block of commented-out lines of code should be removed.(¨¯³¤8ì¸©Ó’1
+[	java:S125"<This block of commented-out lines of code should be removed.(Ô¤öüÿÿÿÿ8 ï÷Ò’1
+[	java:S125"<This block of commented-out lines of code should be removed.(“øÏÜÿÿÿÿÿ8 ï÷Ò’1
+V	java:S125"<This block of commented-out lines of code should be removed.(¡Õ±š8îüÏ1
+V	java:S125"<This block of commented-out lines of code should be removed.(İÒ”8 ï÷Ò’1
+I
+java:S1068".Remove this unused "okHttpUtil" private field.(ı°¾Ö8îüÏ1
+[	java:S125"<This block of commented-out lines of code should be removed.(•¹¿îøÿÿÿÿ8÷Ìò’1
+[	java:S125"<This block of commented-out lines of code should be removed.(ì–œşÿÿÿÿ8 ï÷Ò’1
+d
+java:S1192"IDefine a constant instead of duplicating this literal "serverIp" 3 times.(Æ¸Œª8îüÏ1
+J
+java:S1068"/Remove this unused "composeTime" private field.(¹Ïõ…8ì¸©Ó’1
+r
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(Õø’Üıÿÿÿÿ8‘èö÷’1
+F
+java:S1075"&Remove this hard-coded path-delimiter.(Û«‡Šúÿÿÿÿ8Ô©ğÒ’1
+V	java:S125"<This block of commented-out lines of code should be removed.(°÷«ß8 ï÷Ò’1
+­
+java:S1319"ŒThe type of the "composeStatusMap" object should be an interface such as "ConcurrentMap" rather than the implementation "ConcurrentHashMap".(œåÇÿÿÿÿÿ8îüÏ1
+[	java:S125"<This block of commented-out lines of code should be removed.(•Çâ–ıÿÿÿÿ8îüÏ1
+<
+java:S1643"Use a StringBuilder instead.(Ñ»½ùÿÿÿÿ8Ô©ğÒ’1
+[	java:S125"<This block of commented-out lines of code should be removed.(š……‚øÿÿÿÿ8 ï÷Ò’1
+U	java:S125"<This block of commented-out lines of code should be removed.(Š×ü/8ƒ¡ô’1
+V	java:S125"<This block of commented-out lines of code should be removed.(¹íâ8 ï÷Ò’1
+[	java:S125"<This block of commented-out lines of code should be removed.(Ô›Îúøÿÿÿÿ8îüÏ1

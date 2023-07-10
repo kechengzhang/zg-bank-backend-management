@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vip.file.mapper.CustomCompositionMapper">
+   <update id="updateCorePool">
+       update custom_composition
+      <set>
+       <if test="corePool != null">
+           ,corepool=#{corePool}
+       </if>
+       <if test=" cronTime != null and cronTime != ''">
+           ,cron=#{cronTime}
+       </if>
+          <if test="synthesisTime != null and synthesisTime != ''">
+              ,synthesis_time=#{synthesisTime}
+          </if>
+      </set>
+   </update>
+    <select id="queryCustomComposition" resultType="com.vip.file.model.vo.CustomCompositionVO">
+        select synthesis_time as synthesisTime,cron,corepool  from  custom_composition
+    </select>
+    <insert id="saveCorePoolCronTime">
+        insert into custom_composition
+        (
+        <if test="corePoll != null">
+          corepool,
+        </if>
+        <if test="synthesisTime != null and synthesisTime != ''">
+            synthesis_time,
+        </if>
+        <if test="cronTime != null and cronTime != ''">
+            cron
+        </if>
+        )
+        values
+        (
+        <if test="corePoll != null">
+            #{corePoll}
+        </if>
+        <if test="cronTime != null">
+            ,#{cronTime}
+        </if>
+        <if test="synthesisTime != null">
+            ,#{synthesisTime}
+        </if>
+        )
+    </insert>
+    <select id="queryVideoCompose" resultType="java.lang.String">
+      select filePath from  upload_file
+      <where>
+          isCompose =1
+          and is_pull = 0
+      </where>
+    </select>
+    <update id="updateVideoCompose">
+       update  upload_file
+        <set>
+            is_pull =1
+        </set>
+        <where>
+            filePath in
+          <foreach collection="list" separator="," item="l" open="(" close=")">
+                   #{l}
+          </foreach>
+        </where>
+    </update>
+
+    <select id="queryBankInformation" resultType="com.vip.file.model.vo.BankBranchVO">
+            select  bank_branch_id,bank_branch_name
+            from tb_files
+            <where>
+                <if test="bankBranchName != null and bankBranchName != ''">
+                    bank_branch_name like concat('%','${bankBranchName}','%')
+                </if>
+            </where>
+            group by bank_branch_id
+    </select>
+</mapper>

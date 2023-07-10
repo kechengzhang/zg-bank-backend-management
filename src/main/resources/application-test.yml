@@ -1,0 +1,32 @@
+#测试环境
+spring:
+    datasource:
+       druid: time-between-eviction-runs-millis:60000
+       type: com.alibaba.druid.pool.DruidDataSource
+       url: jdbc:mysql://172.19.25.51:3306/vip_file_manager?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2B8
+       username: root
+       password: 1qw2!QW@
+       driver-class-name: com.mysql.cj.jdbc.Driver
+         #配置druid监控统计拦截的filters
+       filters: stat
+    config:
+      activate:
+        on-profile: test
+file:
+  # 文件存储路径
+  save-path: /home/user/bankbranch/java/file-manager
+  # 断点续传文件配置路径
+  conf-path: /home/user/bankbranch/java/file-manager/conf
+  # 合成视频存放路径
+  compose-path: /home/user/bankbranch/java/video/
+  #  合成视频播放地址
+  request-path: /audio/
+  server-path: /videoFile/
+   # 磁盘大小
+#  directory-path:
+ffmpeg:
+  folderPath: /home/user/bankbranch/java/ffmpeg
+  resourcePath: ffmpeg/ffmpeg
+compose:
+  compose_time: 2
+  compose_rules: minute

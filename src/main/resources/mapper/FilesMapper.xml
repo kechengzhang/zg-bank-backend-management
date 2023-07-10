@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vip.file.mapper.FilesMapper">
+    <sql id="Base_Column_List">
+        id, created_time, modified_time, target_id, file_path, file_name, type
+    </sql>
+    <select id="selectFileList" resultType="com.vip.file.model.dto.GetFileDto">
+        select id, created_time, target_id, file_name, type
+        from tb_files
+        where delete_status = false
+        order by created_time desc
+    </select>
+    <select id="fileIsExist" resultType="java.lang.Boolean">
+        select count(id) > 0
+        from tb_files
+        where file_path = #{fileName}
+    </select>
+
+    <delete id="deleteFileById" parameterType="String">
+        delete from tb_files where id = #{id}
+    </delete>
+
+    <select id="getByFileByMd5" resultType="com.vip.file.model.dto.GetFileDto">
+        select id, created_time, target_id, file_name, type
+        from file
+        <where>
+
+            <if test="md5 != null">
+                and md5 = #{md5}
+            </if>
+
+        </where>
+    </select>
+
+    <insert id="saveFileUploadFailed">
+        insert into
+        file_upload_failed
+        (bank,file_name,upload_time)
+        values
+        (#{fileUploadFailedDO.bankName},#{fileUploadFailedDO.fileName},#{fileUploadFailedDO.uploadTime})
+    </insert>
+    <select id="queryFileUploadFailed" resultType="java.lang.Integer">
+        select count(*) from file_upload_failed
+        <where>
+            is_view =0
+        </where>
+    </select>
+
+    <select id="getFilesByCons" resultType="com.vip.file.model.entity.Files">
+        select * from tb_files a
+        <where>
+            a.file_name = #{fileName}
+            and <![CDATA[a.target_id <> #{targetId}]]>
+        </where>
+    </select>
+    <select id="getFilesCountByTargetId" resultType="java.lang.Integer">
+        select count(s.id) from tb_files s where s.target_id = #{targetId,jdbcType=VARCHAR}
+    </select>
+    <select id="queryFilePath" resultType="java.util.Map">
+        select id,file_path as filePath from  tb_files
+        <where>
+            target_id=#{targetId}
+        </where>
+    </select>
+    <update id="updateTbFilesFilePath">
+        UPDATE tb_files
+        <set>
+            file_path = #{filePath}
+        </set>
+        <where>
+            id =#{id}
+        </where>
+    </update>
+</mapper>

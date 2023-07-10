@@ -1,0 +1,29 @@
+
+g
+java:S1128"JRemove this unused import 'com.vip.file.model.vo.SyntheticVideoFailureVO'.(ë°ó†8ßş—Ü1
+w
+java:S1128"URemove this unused import 'org.springframework.transaction.annotation.Transactional'.(ğùçøùÿÿÿÿ8ßş—Ü1
+T
+java:S1128"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8ßş—Ü1
+R
+java:S1128"5Remove this unused import 'java.text.ParseException'.(ñ®ï•8ßş—Ü1
+l
+java:S3252O"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(âïîÍ8ßş—Ü1
+|
+java:S14884"`Immediately return this expression instead of assigning it to the temporary variable "pageData".(‹ó÷)8ßş—Ü1
+N
+java:S1602;",Remove useless curly braces around statement(Ü‚±ƒûÿÿÿÿ8¨ÁŠÓ1
+q
+java:S32523"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(š“– şÿÿÿÿ8ßş—Ü1
+F
+java:S1128")Remove this unused import 'java.io.File'.(†Ğ¥Å8×ü¯Ó1
+K
+java:S37404"/Provide the parametrized type for this generic.(‹ó÷)8ßş—Ü1
+`
+java:S1155Z">Use isEmpty() to check whether the collection is empty or not.(É€°Îøÿÿÿÿ8ßş—Ü1
+}
+java:S1488S"`Immediately return this expression instead of assigning it to the temporary variable "pageData".(ŞëØÚ8ßş—Ü1
+L
+java:S3740S"/Provide the parametrized type for this generic.(ŞëØÚ8ßş—Ü1
+s
+java:S1128"QRemove this unused import 'org.springframework.web.bind.annotation.RequestParam'.(Â¬À·ùÿÿÿÿ8ßş—Ü1

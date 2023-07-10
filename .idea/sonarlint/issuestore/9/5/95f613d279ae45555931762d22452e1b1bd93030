@@ -1,0 +1,57 @@
+
+i
+java:S1104"SMake YYYY_MM a static final constant or non-public and provide accessors if needed.(Å°İ®
+J
+java:S1444"4Make this "public static YYYYMMDDHHMMSS" field final(óƒ±ë
+h
+java:S3008"RRename this field "YYYY_MM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å°İ®
+b
+java:S2184›"FCast one of the operands of this multiplication operation to a "long".(á™¹ğûÿÿÿÿ
+z
+java:S1104"_Make YYYY_MM_DD_HH_MM_SS a static final constant or non-public and provide accessors if needed.(‚ã™Áıÿÿÿÿ
+C
+java:S1444"-Make this "public static YYYY_MM" field final(Å°İ®
+P
+java:S1444".Make this "public static HH_MM_SS" field final(ÈÉ£ÿÿÿÿÿÿ8—¸Ğ’1
+b
+java:S2184œ"FCast one of the operands of this multiplication operation to a "long".(íïêşÿÿÿÿ
+[	java:S106â"9Replace this use of System.out or System.err by a logger.(œ×Øßÿÿÿÿÿ8”šÈÑ’1
+j
+java:S3008"ORename this field "YYYY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŞÈØ³ùÿÿÿÿ
+T
+java:S1444"9Make this "public static YYYY_MM_DD_HH_MM_SS" field final(‚ã™Áıÿÿÿÿ
+Y	java:S125ß"<This block of commented-out lines of code should be removed.(ÿäù–8—¸Ğ’1
+^	java:S125ÿ"<This block of commented-out lines of code should be removed.(‰·šÏúÿÿÿÿ8—¸Ğ’1
+u
+java:S3008"SRename this field "HH_MM_SS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈÉ£ÿÿÿÿÿÿ8—¸Ğ’1
+_
+java:S1126ğ"AReplace this if-then-else statement by a single return statement.(’Õí¤8—¸Ğ’1
+:
+java:S1148¹"#Use a logger to log this exception.(Ç’Çê
+y
+java:S3008"^Rename this field "YYYY_MM_DD_HH_MM_SS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚ã™Áıÿÿÿÿ
+ƒ
+java:S1488Ø"eImmediately return this expression instead of assigning it to the temporary variable "formattedTime".(¦¸ŠÖ8‰ÙŸø’1
+l
+java:S1104"VMake YYYY_MM_DD a static final constant or non-public and provide accessors if needed.(Ñ«¦Û
+]
+java:S2184š"FCast one of the operands of this multiplication operation to a "long".(¦›çö
+k
+java:S3008"URename this field "YYYY_MM_DD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ«¦Û
+^	java:S125"<This block of commented-out lines of code should be removed.(„öİ£ıÿÿÿÿ8—¸Ğ’1
+F
+java:S1444"0Make this "public static YYYY_MM_DD" field final(Ñ«¦Û
+-
+java:S2176"Rename this class.( ÖÂ¶şÿÿÿÿ
+k
+java:S1104"PMake YYYY a static final constant or non-public and provide accessors if needed.(ŞÈØ³ùÿÿÿÿ
+o
+java:S3008"YRename this field "YYYYMMDDHHMMSS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óƒ±ë
+E
+java:S1444"*Make this "public static YYYY" field final(ŞÈØ³ùÿÿÿÿ
+`	java:S112["FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+p
+java:S1104"ZMake YYYYMMDDHHMMSS a static final constant or non-public and provide accessors if needed.(óƒ±ë
+v
+java:S1104"TMake HH_MM_SS a static final constant or non-public and provide accessors if needed.(ÈÉ£ÿÿÿÿÿÿ8—¸Ğ’1
+^	java:S125§"<This block of commented-out lines of code should be removed.(‘¹¡¬ÿÿÿÿÿ8—¸Ğ’1

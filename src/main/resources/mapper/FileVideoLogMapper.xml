@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vip.file.mapper.FileVideoLogMapper">
+    <insert id="saveFileVideoLog">
+      insert into video_log
+      (system_name,user_name,user_id,business_module,operation_objects
+      ,operation_result,request_parameter,operation_type,ip,failure_reason)
+      values
+      (#{systemName} ,#{userName},#{userId},#{businessModule} ,#{operationObjects} ,
+      #{operationResult},#{requestParameter},#{operationType},#{ip},#{failureReason} )
+  </insert>
+    <select id="queryUserActionRecord" resultType="com.vip.file.model.vo.FileVideoLogVO">
+        select v.id,system_name,
+        case
+        when vu.user_name is null then v.user_name
+        else vu.user_name
+        end user_name
+        ,
+        business_module,operation_objects,
+        operation_result,operation_type,
+        v.create_time as operationTime
+        from video_log v
+        left join video_user vu on vu.id=v.user_id
+        <where>
+            <if test="fileVideoLogQuery.beginTime != null and fileVideoLogQuery.beginTime != ''">
+                and DATE_FORMAT(v.create_time, '%Y-%m-%d') >= #{fileVideoLogQuery.beginTime}
+            </if>
+            <if test="fileVideoLogQuery.endTime != null and fileVideoLogQuery.endTime != ''">
+                and DATE_FORMAT(v.create_time, '%Y-%m-%d') &lt;=#{fileVideoLogQuery.endTime}
+            </if>
+            <if test="fileVideoLogQuery.systemName != null and fileVideoLogQuery.systemName != ''">
+                and system_name=#{fileVideoLogQuery.systemName}
+            </if>
+            <if test="fileVideoLogQuery.operationResult != null and fileVideoLogQuery.operationResult != ''">
+                and operation_result=#{fileVideoLogQuery.operationResult}
+            </if>
+            <if test="fileVideoLogQuery.operationType != null and fileVideoLogQuery.operationType != ''">
+                and operation_type=#{fileVideoLogQuery.operationType}
+            </if>
+            <if test="fileVideoLogQuery.operationObjects != null and fileVideoLogQuery.operationObjects != ''">
+                and operation_objects=#{fileVideoLogQuery.operationObjects}
+            </if>
+            <if test="fileVideoLogQuery.businessModule != null and fileVideoLogQuery.businessModule != ''">
+                and business_module=#{fileVideoLogQuery.businessModule}
+            </if>
+        </where>
+        order by id  desc
+    </select>
+    <select id="queryUserActionRecordDetails" resultType="com.vip.file.model.entity.FileVideoLogRuleDetailsDO">
+        select  ip as ipAddress,operation_type,
+        failure_reason,request_parameter,operation_objects,operation_result
+        from video_log
+        <where>
+            id =#{id}
+        </where>
+    </select>
+    <select id="queryVerificationName" resultType="java.lang.String">
+        select verification_name
+        from file_name_verification_rule
+        <where>
+            id in
+            <foreach collection="ids" item="id" separator="," open="(" close=")">
+                #{id}
+            </foreach>
+        </where>
+    </select>
+    <select id="queryUploadFailedFile" resultType="com.vip.file.model.vo.FileUploadFailedVO">
+        select bank,upload_time,file_name
+        from file_upload_failed
+        <where>
+            is_view =0
+        </where>
+    </select>
+    <update id="updateUploadFailedFile" >
+       update file_upload_failed
+        <set>
+            is_view =1
+        </set>
+        <where>
+            is_view =0
+        </where>
+    </update>
+    <select id="queryFileName" resultType="java.lang.String">
+        select CONCAT('文件名: ',file_name) from  tb_files
+        <where>
+            id=#{id}
+        </where>
+    </select>
+</mapper>

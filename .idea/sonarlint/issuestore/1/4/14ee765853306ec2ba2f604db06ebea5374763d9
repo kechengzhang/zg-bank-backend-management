@@ -1,0 +1,23 @@
+
+C
+java:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ª‹ö÷’1
+¨
+java:S1319"ŒThe type of the "composeStatusMap" object should be an interface such as "ConcurrentMap" rather than the implementation "ConcurrentHashMap".(¼‹—õ8œêæÏ1
+w
+java:S1104"\Make composeStatusMap a static final constant or non-public and provide accessors if needed.(¼‹—õ8œêæÏ1
+S
+java:S1444"3Make this "public static uploadFileMap" field final(×üë˜øÿÿÿÿ8œêæÏ1
+8
+java:S2386"Make this member "protected".(¼‹—õ8œêæÏ1
+d
+java:S1192"IDefine a constant instead of duplicating this literal "corePool" 3 times.(åÛÑ¥8œêæÏ1
+ª
+java:S1319"‰The type of the "uploadFileMap" object should be an interface such as "ConcurrentMap" rather than the implementation "ConcurrentHashMap".(×üë˜øÿÿÿÿ8œêæÏ1
+Z
+java:S1068"@Remove this unused "customCompositionServiceImpl" private field.(â®Éq8œêæÏ1
+Q
+java:S1444"6Make this "public static composeStatusMap" field final(¼‹—õ8œêæÏ1
+=
+java:S2386"Make this member "protected".(×üë˜øÿÿÿÿ8œêæÏ1
+y
+java:S1104"YMake uploadFileMap a static final constant or non-public and provide accessors if needed.(×üë˜øÿÿÿÿ8§¡êÏ1

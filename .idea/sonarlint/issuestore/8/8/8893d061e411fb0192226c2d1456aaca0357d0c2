@@ -1,0 +1,19 @@
+
+E
+java:S3740/"/Provide the parametrized type for this generic.(Õ›ÖÛ
+R
+java:S1854 ";Remove this useless assignment to local variable "dataMap".(ÄÇàÿ
+\
+java:S3252¢"EUse static access with "com.alibaba.fastjson.JSON" for "parseObject".(éí‹Ñ
+t
+java:S22931"YReplace the type specification in this constructor call with the diamond operator ("<>").(Û¦†ªûÿÿÿÿ
+t
+java:S2293 "YReplace the type specification in this constructor call with the diamond operator ("<>").(Û¦†ªûÿÿÿÿ
+E
+java:S3740"/Provide the parametrized type for this generic.(ÎÆ„Ð
+E
+java:S3740/"/Provide the parametrized type for this generic.(Õ›ÖÛ
+E
+java:S3740"/Provide the parametrized type for this generic.(ÎÆ„Ð
+P
+java:S1118":Add a private constructor to hide the implicit public one.(Ç”ãã

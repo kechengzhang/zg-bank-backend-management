@@ -1,0 +1,7 @@
+
+a
+java:S3252"DUse static access with "com.alibaba.fastjson.JSON" for "parseArray".(î„äÎ8ºóŠ1
+c
+java:S1226"AIntroduce a new variable instead of reusing the parameter "list".(Ô«»ëıÿÿÿÿ8ºóŠ1
+b
+java:S3252"EUse static access with "com.alibaba.fastjson.JSON" for "parseObject".(ô®ˆü8ºóŠ1

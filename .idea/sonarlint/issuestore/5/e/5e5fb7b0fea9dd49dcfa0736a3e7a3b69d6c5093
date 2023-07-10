@@ -1,0 +1,17 @@
+
+X
+java:S2696("6Make the enclosing method "static" or remove this set.(¦’Ú¤øÿÿÿÿ8Ç®‰Š„1
+k	java:S117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õä›’ÿÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(á‡Å
+X
+java:S2696#"6Make the enclosing method "static" or remove this set.(èÙ·ùÿÿÿÿÿ8Œ³Îý’1
+h	java:S100'"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õä›’ÿÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.( ö²„
+X
+java:S2696,"6Make the enclosing method "static" or remove this set.(ÚÈ¿Òûÿÿÿÿ8Ç®‰Š„1
+X
+java:S2696""6Make the enclosing method "static" or remove this set.(ÔßÈäüÿÿÿÿ8Œ³Îý’1
+f	java:S117+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õ®ðŸ
+S
+java:S2696!"6Make the enclosing method "static" or remove this set.(×ŽÔµ8Ç®‰Š„1
+c	java:S100+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õ®ðŸ

@@ -1,0 +1,11 @@
+
+E
+java:S1148W"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8å¸¯ˆ‡1
+E
+java:S11481"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8å¸¯ˆ‡1
+f
+java:S1192-"IDefine a constant instead of duplicating this literal "userName" 3 times.(›æË”8å¸¯ˆ‡1
+c
+java:S2184"FCast one of the operands of this multiplication operation to a "long".(ÃùÊ8å¸¯ˆ‡1
+\
+java:S1118":Add a private constructor to hide the implicit public one.(ñÕŸÂüÿÿÿÿ8àñ¯ˆ‡1

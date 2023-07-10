@@ -1,0 +1,309 @@
+2023-07-10 13:17:13.269 [main] INFO  com.vip.file.FileApplication - Starting FileApplication on XiaoXinAir14ITL2021 with PID 18660 (D:\javacode\workspace\zg-bank-backend-management\target\classes started by zhongGuan-Mwj in D:\javacode\workspace\zg-bank-backend-management)
+2023-07-10 13:17:13.271 [main] INFO  com.vip.file.FileApplication - The following profiles are active: dev
+2023-07-10 13:17:14.212 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-10 13:17:14.531 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9555 (http)
+2023-07-10 13:17:14.537 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9555"]
+2023-07-10 13:17:14.538 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-10 13:17:14.538 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-07-10 13:17:14.622 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-10 13:17:14.622 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1315 ms
+2023-07-10 13:17:14.683 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-07-10 13:17:14.827 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-07-10 13:17:16.282 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-07-10 13:17:20.436 [Druid-ConnectionPool-Create-163160871] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/vip_file_manager?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2B8, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1643)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1709)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2715)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 9 common frames omitted
+2023-07-10 15:09:43.525 [main] INFO  com.vip.file.FileApplication - Starting FileApplication on XiaoXinAir14ITL2021 with PID 9468 (D:\javacode\workspace\zg-bank-backend-management\target\classes started by zhongGuan-Mwj in D:\javacode\workspace\zg-bank-backend-management)
+2023-07-10 15:09:43.527 [main] INFO  com.vip.file.FileApplication - The following profiles are active: dev
+2023-07-10 15:09:44.491 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-10 15:09:44.785 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9555 (http)
+2023-07-10 15:09:44.791 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9555"]
+2023-07-10 15:09:44.792 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-10 15:09:44.792 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-07-10 15:09:44.880 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-10 15:09:44.881 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1317 ms
+2023-07-10 15:09:44.943 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-07-10 15:09:45.050 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-07-10 15:09:46.330 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-07-10 15:09:46.804 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-07-10 15:09:46.906 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-10 15:09:47.115 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-07-10 15:09:47.127 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-07-10 15:09:47.151 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-07-10 15:09:47.279 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: viewFilesImageUsingGET_1
+2023-07-10 15:09:47.368 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9555"]
+2023-07-10 15:09:47.385 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9555 (http) with context path ''
+2023-07-10 15:09:47.387 [main] INFO  com.vip.file.FileApplication - Started FileApplication in 4.257 seconds (JVM running for 6.15)
+2023-07-10 15:10:49.812 [http-nio-9555-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-10 15:10:49.813 [http-nio-9555-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-10 15:10:49.819 [http-nio-9555-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2023-07-10 15:10:50.382 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 15:11:01.786 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 15:11:01.848 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:11:06.221 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-07-10 15:11:06.796 [http-nio-9555-exec-8] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 15:11:06.799 [http-nio-9555-exec-8] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:11:08.343 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-07-10 15:11:13.338 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 15:11:13.340 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:11:39.040 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-07-10 15:11:39.662 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 15:11:39.664 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:11:40.667 [http-nio-9555-exec-10] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-07-10 15:11:41.413 [http-nio-9555-exec-9] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 15:11:41.419 [http-nio-9555-exec-9] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":2,"state":1,"type":"videoCompose","info":{"currentTime":"2023-07-10 15:11:41","beginTime":"2023-07-10 12:52:03","endTime":"2023-07-10 12:54:03","fileId":"6"}}
+2023-07-10 15:12:06.644 [http-nio-9555-exec-3] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-07-10 15:12:30.569 [http-nio-9555-exec-8] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":3,"type":"videoCompose"}
+2023-07-10 15:12:34.713 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 15:12:34.715 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":2,"state":1,"type":"videoCompose","info":{"currentTime":"2023-07-10 15:12:34","beginTime":"2023-07-10 15:11:10","endTime":"2023-07-10 15:13:10","fileId":"6"}}
+2023-07-10 15:13:10.018 [scheduling-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":0,"type":"videoCompose","fileId":"6"}
+2023-07-10 15:13:37.169 [pool-1-thread-1] INFO  com.vip.file.utils.MergeVideoUtils - 解码完成，输出文件路径:D:/temp/file-manager/6/118fffbefaaf4e6093d07e5a4e7beb35.mp4
+2023-07-10 15:14:07.233 [pool-1-thread-1] INFO  com.vip.file.utils.MergeVideoUtils - -----操作成功:D:\home\user\wuxibank\java\ffmpeg.exe\ffmpeg471604496893710876 -i D:/temp/file-manager/6/118fffbefaaf4e6093d07e5a4e7beb35.mp4 -c:v libx264 -c:a aac -movflags +faststart D:/temp/video/20230710/c0e623ca-381e-4ff4-a339-f84f125e38db.mp4
+2023-07-10 15:14:07.233 [pool-1-thread-1] INFO  com.vip.file.quartz.MergeVideoThread - 视频合成成功,合成视频访问路径:/video/20230710/c0e623ca-381e-4ff4-a339-f84f125e38db.mp4
+2023-07-10 15:14:07.249 [pool-1-thread-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"type":"videoCompose","fileId":"6"}
+2023-07-10 15:14:15.032 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-07-10 15:14:16.128 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 15:14:16.130 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:14:30.097 [http-nio-9555-exec-5] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-07-10 15:14:32.015 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 15:14:32.017 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:14:33.163 [http-nio-9555-exec-9] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-07-10 15:14:34.422 [http-nio-9555-exec-10] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 15:14:34.425 [http-nio-9555-exec-10] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:14:44.762 [http-nio-9555-exec-3] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-07-10 15:20:06.032 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 15:20:06.038 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:20:07.707 [http-nio-9555-exec-8] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-07-10 15:20:08.464 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 15:20:08.467 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:20:09.738 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-07-10 15:21:31.998 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 15:21:32.004 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:21:44.488 [http-nio-9555-exec-5] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-07-10 15:21:45.706 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 15:21:45.708 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:21:50.027 [http-nio-9555-exec-10] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-07-10 15:21:51.062 [http-nio-9555-exec-9] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 15:21:51.063 [http-nio-9555-exec-9] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:21:53.752 [http-nio-9555-exec-3] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-07-10 15:21:54.923 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 15:21:54.926 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:22:09.624 [http-nio-9555-exec-8] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-07-10 15:22:11.013 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 15:22:11.015 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:22:25.300 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-07-10 15:22:26.518 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 15:22:26.520 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:22:29.013 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-07-10 15:22:34.148 [http-nio-9555-exec-8] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 15:22:53.281 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 接受上传文件事件ID:6
+2023-07-10 15:22:53.281 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 队列长度为:0
+2023-07-10 15:22:53.282 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 发送消息:{"state":1,"type":"EVENT_SUCCESS","info":"6"}
+2023-07-10 15:22:53.283 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 发送消息:{"state":1,"type":"EVENT_SUCCESS","info":"6"}
+2023-07-10 15:22:56.140 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"CURRENT_TIME","info":{"beginTime":"2023-07-10 15:11:10","endTime":"2023-07-10 15:13:10","fileId":"6"}}
+2023-07-10 15:22:56.140 [http-nio-9555-exec-1] INFO  com.vip.file.service.impl.FileServiceImpl - 第一个文件上传完毕，向前端发送合成时间:{"beginTime":"2023-07-10 15:11:10","endTime":"2023-07-10 15:13:10","fileId":"6"}
+2023-07-10 15:22:56.141 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"EVENT_SUCCESS","info":""}
+2023-07-10 15:23:06.207 [http-nio-9555-exec-3] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-07-10 15:23:07.729 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 15:23:07.731 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":2,"state":1,"type":"videoCompose","info":{"currentTime":"2023-07-10 15:23:07","beginTime":"2023-07-10 15:11:10","endTime":"2023-07-10 15:13:10","fileId":"6"}}
+2023-07-10 15:24:32.805 [http-nio-9555-exec-9] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:3
+2023-07-10 15:24:52.720 [http-nio-9555-exec-3] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":3,"type":"videoCompose"}
+2023-07-10 15:26:13.363 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:2
+2023-07-10 15:26:14.633 [http-nio-9555-exec-5] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:3
+2023-07-10 15:26:14.639 [http-nio-9555-exec-5] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":2,"state":1,"type":"videoCompose","info":{"currentTime":"2023-07-10 15:26:14","beginTime":"2023-07-10 15:26:00","endTime":"2023-07-10 15:28:00","fileId":"6"}}
+2023-07-10 15:26:46.241 [http-nio-9555-exec-9] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:2
+2023-07-10 15:26:48.777 [http-nio-9555-exec-10] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:3
+2023-07-10 15:26:48.779 [http-nio-9555-exec-10] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":2,"state":1,"type":"videoCompose","info":{"currentTime":"2023-07-10 15:26:48","beginTime":"2023-07-10 15:26:00","endTime":"2023-07-10 15:28:00","fileId":"6"}}
+2023-07-10 15:28:00.014 [scheduling-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":0,"type":"videoCompose","fileId":"6"}
+2023-07-10 15:28:00.318 [pool-2-thread-1] INFO  com.vip.file.utils.MergeVideoUtils - 视频解码信息:  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 774x440 [SAR 1:1 DAR 387:220], 391 kb/s, 25 fps, 25 tbr, 12800 tbn (default)
+2023-07-10 15:28:01.794 [pool-2-thread-1] INFO  com.vip.file.utils.MergeVideoUtils - -----操作成功:D:\home\user\wuxibank\java\ffmpeg.exe\ffmpeg7949237243673599033 -i D:/temp/file-manager/6/01.mp4 -c:v libx264 -c:a aac -movflags +faststart D:/temp/video/20230710/86484407-b731-4ec3-ac46-d819e80cc6bb.mp4
+2023-07-10 15:28:01.794 [pool-2-thread-1] INFO  com.vip.file.quartz.MergeVideoThread - 视频合成成功,合成视频访问路径:/video/20230710/86484407-b731-4ec3-ac46-d819e80cc6bb.mp4
+2023-07-10 15:28:01.797 [pool-2-thread-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"type":"videoCompose","fileId":"6"}
+2023-07-10 15:28:15.776 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:2
+2023-07-10 15:28:18.694 [http-nio-9555-exec-3] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:3
+2023-07-10 15:28:18.695 [http-nio-9555-exec-3] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:28:36.148 [http-nio-9555-exec-5] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:2
+2023-07-10 15:28:41.478 [http-nio-9555-exec-9] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:3
+2023-07-10 15:28:50.442 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 接受上传文件事件ID:6
+2023-07-10 15:28:50.442 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 队列长度为:0
+2023-07-10 15:28:50.442 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 发送消息:{"state":1,"type":"EVENT_SUCCESS","info":"6"}
+2023-07-10 15:28:50.442 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 发送消息:{"state":1,"type":"EVENT_SUCCESS","info":"6"}
+2023-07-10 15:28:50.442 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 发送消息:{"state":1,"type":"EVENT_SUCCESS","info":"6"}
+2023-07-10 15:28:53.200 [http-nio-9555-exec-3] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"CURRENT_TIME","info":{"beginTime":"2023-07-10 15:26:00","endTime":"2023-07-10 15:28:00","fileId":"6"}}
+2023-07-10 15:28:53.201 [http-nio-9555-exec-3] INFO  com.vip.file.service.impl.FileServiceImpl - 第一个文件上传完毕，向前端发送合成时间:{"beginTime":"2023-07-10 15:26:00","endTime":"2023-07-10 15:28:00","fileId":"6"}
+2023-07-10 15:28:53.201 [http-nio-9555-exec-3] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"EVENT_SUCCESS","info":""}
+2023-07-10 15:28:55.482 [http-nio-9555-exec-8] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:2
+2023-07-10 15:29:05.446 [http-nio-9555-exec-5] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":3,"type":"videoCompose"}
+2023-07-10 15:29:15.453 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:3
+2023-07-10 15:29:15.454 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":2,"state":1,"type":"videoCompose","info":{"currentTime":"2023-07-10 15:29:15","beginTime":"2023-07-10 15:30:00","endTime":"2023-07-10 15:32:00","fileId":"6"}}
+2023-07-10 15:32:00.011 [scheduling-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":0,"type":"videoCompose","fileId":"6"}
+2023-07-10 15:32:00.309 [pool-3-thread-1] INFO  com.vip.file.utils.MergeVideoUtils - 视频解码信息:  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 774x440 [SAR 1:1 DAR 387:220], 391 kb/s, 25 fps, 25 tbr, 12800 tbn (default)
+2023-07-10 15:32:01.807 [pool-3-thread-1] INFO  com.vip.file.utils.MergeVideoUtils - -----操作成功:D:\home\user\wuxibank\java\ffmpeg.exe\ffmpeg2511408535476315935 -i D:/temp/file-manager/6/01.mp4 -c:v libx264 -c:a aac -movflags +faststart D:/temp/video/20230710/05a7342f-591d-454f-a23c-5cffaf35db85.mp4
+2023-07-10 15:32:01.807 [pool-3-thread-1] INFO  com.vip.file.quartz.MergeVideoThread - 视频合成成功,合成视频访问路径:/video/20230710/05a7342f-591d-454f-a23c-5cffaf35db85.mp4
+2023-07-10 15:32:01.809 [pool-3-thread-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"type":"videoCompose","fileId":"6"}
+2023-07-10 15:32:10.062 [http-nio-9555-exec-10] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:2
+2023-07-10 15:32:13.001 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:3
+2023-07-10 15:32:13.003 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:32:17.428 [http-nio-9555-exec-3] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:2
+2023-07-10 15:32:18.444 [http-nio-9555-exec-8] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:3
+2023-07-10 15:32:18.446 [http-nio-9555-exec-8] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:32:19.971 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:2
+2023-07-10 15:33:16.865 [http-nio-9555-exec-9] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-07-10 15:46:35.375 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 15:46:35.381 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:48:22.444 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-07-10 15:48:23.480 [http-nio-9555-exec-5] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 15:48:23.484 [http-nio-9555-exec-5] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:49:23.350 [main] INFO  com.vip.file.FileApplication - Starting FileApplication on XiaoXinAir14ITL2021 with PID 24760 (D:\javacode\workspace\zg-bank-backend-management\target\classes started by zhongGuan-Mwj in D:\javacode\workspace\zg-bank-backend-management)
+2023-07-10 15:49:23.353 [main] INFO  com.vip.file.FileApplication - The following profiles are active: dev
+2023-07-10 15:49:24.282 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-10 15:49:24.580 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9555 (http)
+2023-07-10 15:49:24.586 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9555"]
+2023-07-10 15:49:24.587 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-10 15:49:24.587 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-07-10 15:49:24.668 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-10 15:49:24.668 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1241 ms
+2023-07-10 15:49:24.729 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-07-10 15:49:24.835 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-07-10 15:49:25.873 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-07-10 15:49:26.285 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-07-10 15:49:26.386 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-10 15:49:26.585 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-07-10 15:49:26.594 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-07-10 15:49:26.614 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-07-10 15:49:26.731 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: viewFilesImageUsingGET_1
+2023-07-10 15:49:26.818 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9555"]
+2023-07-10 15:49:26.837 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9555 (http) with context path ''
+2023-07-10 15:49:26.839 [main] INFO  com.vip.file.FileApplication - Started FileApplication in 3.84 seconds (JVM running for 5.018)
+2023-07-10 15:50:42.055 [http-nio-9555-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-10 15:50:42.055 [http-nio-9555-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-10 15:50:42.067 [http-nio-9555-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2023-07-10 15:50:42.114 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 15:50:42.159 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:51:47.294 [http-nio-9555-exec-3] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-07-10 15:51:48.262 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 15:51:48.268 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:51:49.662 [http-nio-9555-exec-8] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-07-10 15:51:51.083 [http-nio-9555-exec-10] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 15:51:51.085 [http-nio-9555-exec-10] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:51:52.777 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-07-10 15:52:25.188 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 15:52:25.190 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 15:52:26.279 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-07-10 15:52:26.849 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 15:52:26.857 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":2,"state":1,"type":"videoCompose","info":{"currentTime":"2023-07-10 15:52:26","beginTime":"2023-07-10 15:30:00","endTime":"2023-07-10 15:32:00","fileId":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}}
+2023-07-10 15:52:28.446 [http-nio-9555-exec-5] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-07-10 15:52:48.789 [http-nio-9555-exec-9] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":3,"type":"videoCompose"}
+2023-07-10 15:52:52.950 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 15:52:52.952 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":2,"state":1,"type":"videoCompose","info":{"currentTime":"2023-07-10 15:52:52","beginTime":"2023-07-10 15:52:10","endTime":"2023-07-10 15:54:10","fileId":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}}
+2023-07-10 15:53:05.878 [http-nio-9555-exec-3] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-07-10 15:53:10.468 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":3,"type":"videoCompose"}
+2023-07-10 15:53:12.811 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 15:53:12.813 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":2,"state":1,"type":"videoCompose","info":{"currentTime":"2023-07-10 15:53:12","beginTime":"2023-07-10 15:57:10","endTime":"2023-07-10 15:59:10","fileId":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}}
+2023-07-10 15:55:00.608 [http-nio-9555-exec-5] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-07-10 15:55:05.668 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 15:55:05.670 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":2,"state":1,"type":"videoCompose","info":{"currentTime":"2023-07-10 15:55:05","beginTime":"2023-07-10 15:57:10","endTime":"2023-07-10 15:59:10","fileId":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}}
+2023-07-10 15:55:07.289 [http-nio-9555-exec-3] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-07-10 15:59:10.012 [scheduling-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":0,"type":"videoCompose","fileId":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}
+2023-07-10 15:59:10.316 [pool-1-thread-1] INFO  com.vip.file.utils.MergeVideoUtils - 视频解码信息:  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 774x440 [SAR 1:1 DAR 387:220], 391 kb/s, 25 fps, 25 tbr, 12800 tbn (default)
+2023-07-10 15:59:11.669 [pool-1-thread-1] INFO  com.vip.file.utils.MergeVideoUtils - -----操作成功:D:\home\user\wuxibank\java\ffmpeg.exe\ffmpeg3516203438837623573 -i D:/temp/file-manager/d2b94fd2-6d71-487a-88f1-239ce4e75fc9/0.mp4 -c:v libx264 -c:a aac -movflags +faststart D:/temp/video/20230710/920d4f38-690b-4f75-9995-a795492aa6d7.mp4
+2023-07-10 15:59:11.669 [pool-1-thread-1] INFO  com.vip.file.quartz.MergeVideoThread - 视频合成成功,合成视频访问路径:/video/20230710/920d4f38-690b-4f75-9995-a795492aa6d7.mp4
+2023-07-10 15:59:11.674 [pool-1-thread-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":3,"type":"videoCompose","fileId":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}
+2023-07-10 16:02:48.003 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 16:02:48.009 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 16:02:58.116 [http-nio-9555-exec-10] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-07-10 16:02:59.302 [http-nio-9555-exec-5] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 16:02:59.304 [http-nio-9555-exec-5] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 16:03:00.991 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-07-10 16:03:02.111 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 16:03:02.113 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 16:03:05.528 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-07-10 16:03:09.568 [http-nio-9555-exec-10] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 16:03:16.354 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 接受上传文件事件ID:6
+2023-07-10 16:03:16.354 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 队列长度为:0
+2023-07-10 16:03:16.355 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 发送消息:{"state":1,"type":"EVENT_SUCCESS","info":"6"}
+2023-07-10 16:03:19.122 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"CURRENT_TIME","info":{"beginTime":"2023-07-10 15:57:10","endTime":"2023-07-10 15:59:10","fileId":"6"}}
+2023-07-10 16:03:19.122 [http-nio-9555-exec-1] INFO  com.vip.file.service.impl.FileServiceImpl - 第一个文件上传完毕，向前端发送合成时间:{"beginTime":"2023-07-10 15:57:10","endTime":"2023-07-10 15:59:10","fileId":"6"}
+2023-07-10 16:03:19.122 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"EVENT_SUCCESS","info":""}
+2023-07-10 16:03:21.145 [http-nio-9555-exec-3] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-07-10 16:03:24.329 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 16:03:24.331 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":2,"state":1,"type":"videoCompose","info":{"currentTime":"2023-07-10 16:03:24","beginTime":"2023-07-10 15:57:10","endTime":"2023-07-10 15:59:10","fileId":"6"}}
+2023-07-10 16:03:43.989 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":3,"type":"videoCompose"}
+2023-07-10 16:06:00.018 [scheduling-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":0,"type":"videoCompose","fileId":"6"}
+2023-07-10 16:06:00.327 [pool-2-thread-1] INFO  com.vip.file.utils.MergeVideoUtils - 视频解码信息:  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 774x440 [SAR 1:1 DAR 387:220], 391 kb/s, 25 fps, 25 tbr, 12800 tbn (default)
+2023-07-10 16:06:01.697 [pool-2-thread-1] INFO  com.vip.file.utils.MergeVideoUtils - -----操作成功:D:\home\user\wuxibank\java\ffmpeg.exe\ffmpeg7466329203556986392 -i D:/temp/file-manager/6/01.mp4 -c:v libx264 -c:a aac -movflags +faststart D:/temp/video/20230710/b882f521-d164-4169-a62f-8b565b983e38.mp4
+2023-07-10 16:06:01.698 [pool-2-thread-1] INFO  com.vip.file.quartz.MergeVideoThread - 视频合成成功,合成视频访问路径:/video/20230710/b882f521-d164-4169-a62f-8b565b983e38.mp4
+2023-07-10 16:06:01.700 [pool-2-thread-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":3,"type":"videoCompose","fileId":"6"}
+2023-07-10 16:06:07.222 [http-nio-9555-exec-5] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-07-10 16:06:08.456 [http-nio-9555-exec-9] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 16:06:08.458 [http-nio-9555-exec-9] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 16:06:10.004 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-07-10 16:06:14.832 [http-nio-9555-exec-3] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 16:06:14.835 [http-nio-9555-exec-3] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 16:14:17.971 [http-nio-9555-exec-10] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:2
+2023-07-10 16:14:17.976 [http-nio-9555-exec-10] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 16:14:32.933 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-07-10 16:14:32.935 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-07-10 16:14:36.796 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 16:14:36.798 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 16:14:38.413 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-07-10 16:14:39.400 [http-nio-9555-exec-10] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 16:14:39.401 [http-nio-9555-exec-10] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 16:14:40.191 [http-nio-9555-exec-9] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-07-10 16:24:56.122 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 16:24:56.128 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 16:24:59.243 [http-nio-9555-exec-3] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-07-10 16:25:02.845 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 16:25:02.847 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 16:25:09.791 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-07-10 16:25:10.677 [http-nio-9555-exec-9] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 16:25:10.679 [http-nio-9555-exec-9] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":1,"state":1,"type":"videoCompose"}
+2023-07-10 16:25:13.601 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-07-10 16:25:20.304 [http-nio-9555-exec-5] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 16:25:33.951 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 接受上传文件事件ID:6
+2023-07-10 16:25:33.952 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 队列长度为:0
+2023-07-10 16:25:33.952 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 发送消息:{"state":1,"type":"EVENT_SUCCESS","info":"6"}
+2023-07-10 16:25:34.721 [http-nio-9555-exec-10] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"CURRENT_TIME","info":{"beginTime":"2023-07-10 16:04:00","endTime":"2023-07-10 16:06:00","fileId":"6"}}
+2023-07-10 16:25:34.722 [http-nio-9555-exec-10] INFO  com.vip.file.service.impl.FileServiceImpl - 第一个文件上传完毕，向前端发送合成时间:{"beginTime":"2023-07-10 16:04:00","endTime":"2023-07-10 16:06:00","fileId":"6"}
+2023-07-10 16:25:34.722 [http-nio-9555-exec-10] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"EVENT_SUCCESS","info":""}
+2023-07-10 16:25:37.909 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-07-10 16:25:38.700 [http-nio-9555-exec-9] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为:1
+2023-07-10 16:25:38.703 [http-nio-9555-exec-9] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"isCompose":2,"state":1,"type":"videoCompose","info":{"currentTime":"2023-07-10 16:25:38","beginTime":"2023-07-10 16:04:00","endTime":"2023-07-10 16:06:00","fileId":"6"}}

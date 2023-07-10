@@ -1,0 +1,483 @@
+2023-06-29 00:22:35.473 [main] INFO  com.vip.file.FileApplication - Starting FileApplication on XiaoXinAir14ITL2021 with PID 12236 (D:\javacode\workspace\zg-bank-backend-management\target\classes started by zhongGuan-Mwj in D:\javacode\workspace\zg-bank-backend-management)
+2023-06-29 00:22:35.475 [main] INFO  com.vip.file.FileApplication - The following profiles are active: dev
+2023-06-29 00:22:35.657 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.18.Final
+2023-06-29 00:22:36.430 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-29 00:22:36.756 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9555 (http)
+2023-06-29 00:22:36.762 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9555"]
+2023-06-29 00:22:36.762 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-29 00:22:36.763 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-06-29 00:22:36.846 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-29 00:22:36.847 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1334 ms
+2023-06-29 00:22:36.905 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-06-29 00:22:37.056 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-06-29 00:22:38.058 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-06-29 00:22:38.536 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-06-29 00:22:38.652 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-29 00:22:38.878 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-06-29 00:22:38.889 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-06-29 00:22:38.915 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-06-29 00:22:39.046 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: viewFilesImageUsingGET_1
+2023-06-29 00:22:39.138 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9555"]
+2023-06-29 00:22:39.159 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9555 (http) with context path ''
+2023-06-29 00:22:39.162 [main] INFO  com.vip.file.FileApplication - Started FileApplication in 4.016 seconds (JVM running for 4.957)
+2023-06-29 00:22:42.640 [http-nio-9555-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-29 00:22:42.640 [http-nio-9555-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-29 00:22:42.649 [http-nio-9555-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2023-06-29 00:22:42.700 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为1
+2023-06-29 00:22:48.004 [http-nio-9555-exec-5] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"CURRENT_TIME","info":{"currentTime":"2023-06-29 00:22:48","composeTime":"2023-06-28 23:32:06","fileId":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}}
+2023-06-29 00:22:50.329 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为2
+2023-06-29 00:22:50.331 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"CURRENT_TIME","info":{"currentTime":"2023-06-29 00:22:50","composeTime":"","fileId":"6"}}
+2023-06-29 00:23:02.464 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 接受上传文件事件ID:6
+2023-06-29 00:23:02.464 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 队列长度为:0
+2023-06-29 00:23:02.464 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 发送消息:{"state":1,"type":"EVENT_SUCCESS","info":"6"}
+2023-06-29 00:23:02.465 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 发送消息:{"state":1,"type":"EVENT_SUCCESS","info":"6"}
+2023-06-29 00:23:03.272 [http-nio-9555-exec-8] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"CURRENT_TIME","info":{"currentTime":"2023-06-29 00:23:03","composeTime":"2023-06-29 00:23:02","fileId":"6"}}
+2023-06-29 00:23:03.273 [http-nio-9555-exec-8] INFO  com.vip.file.service.impl.FileServiceImpl - 第一个文件上传完毕，向前端发送合成时间：
+2023-06-29 00:23:04.016 [http-nio-9555-exec-3] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"EVENT_SUCCESS","info":""}
+2023-06-29 00:23:17.064 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为3
+2023-06-29 00:23:41.012 [pool-1-thread-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"MERGE_VIDEO_ONGOING","info":"6"}
+2023-06-29 00:23:41.013 [pool-1-thread-1] INFO  com.vip.file.quartz.MergeVideoThread - 开始合成视频，通知页面:6
+2023-06-29 00:23:41.041 [pool-1-thread-1] INFO  com.vip.file.quartz.MergeVideoThread - 开始合成视频,合成视频分视频文件:[D:/temp/file-manager/6/202209131920.mp4, D:/temp/file-manager/6/202209131921.mp4]
+2023-06-29 00:32:50.823 [main] INFO  com.vip.file.FileApplication - Starting FileApplication on XiaoXinAir14ITL2021 with PID 22668 (D:\javacode\workspace\zg-bank-backend-management\target\classes started by zhongGuan-Mwj in D:\javacode\workspace\zg-bank-backend-management)
+2023-06-29 00:32:50.825 [main] INFO  com.vip.file.FileApplication - The following profiles are active: dev
+2023-06-29 00:32:51.654 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-29 00:32:51.936 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9555 (http)
+2023-06-29 00:32:51.942 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9555"]
+2023-06-29 00:32:51.942 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-29 00:32:51.942 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-06-29 00:32:52.024 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-29 00:32:52.024 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1152 ms
+2023-06-29 00:32:52.081 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-06-29 00:32:52.214 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-06-29 00:32:53.465 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-06-29 00:32:53.906 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-06-29 00:32:54.016 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-29 00:32:54.209 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-06-29 00:32:54.219 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-06-29 00:32:54.241 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-06-29 00:32:54.354 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: viewFilesImageUsingGET_1
+2023-06-29 00:32:54.441 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9555"]
+2023-06-29 00:32:54.459 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9555 (http) with context path ''
+2023-06-29 00:32:54.461 [main] INFO  com.vip.file.FileApplication - Started FileApplication in 4.03 seconds (JVM running for 4.966)
+2023-06-29 00:33:01.681 [http-nio-9555-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-29 00:33:01.681 [http-nio-9555-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-29 00:33:01.688 [http-nio-9555-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2023-06-29 00:33:07.465 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为1
+2023-06-29 00:33:26.022 [pool-1-thread-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"MERGE_VIDEO_ONGOING","info":"6"}
+2023-06-29 00:33:26.025 [pool-1-thread-1] INFO  com.vip.file.quartz.MergeVideoThread - 开始合成视频，通知页面:6
+2023-06-29 00:34:53.070 [main] INFO  com.vip.file.FileApplication - Starting FileApplication on XiaoXinAir14ITL2021 with PID 20920 (D:\javacode\workspace\zg-bank-backend-management\target\classes started by zhongGuan-Mwj in D:\javacode\workspace\zg-bank-backend-management)
+2023-06-29 00:34:53.071 [main] INFO  com.vip.file.FileApplication - The following profiles are active: dev
+2023-06-29 00:34:53.928 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-29 00:34:54.230 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9555 (http)
+2023-06-29 00:34:54.235 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9555"]
+2023-06-29 00:34:54.236 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-29 00:34:54.236 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-06-29 00:34:54.320 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-29 00:34:54.320 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1223 ms
+2023-06-29 00:34:54.377 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-06-29 00:34:54.518 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-06-29 00:34:55.523 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-06-29 00:34:55.936 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-06-29 00:34:56.036 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-29 00:34:56.235 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-06-29 00:34:56.248 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-06-29 00:34:56.271 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-06-29 00:34:56.408 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: viewFilesImageUsingGET_1
+2023-06-29 00:34:56.560 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9555"]
+2023-06-29 00:34:56.581 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9555 (http) with context path ''
+2023-06-29 00:34:56.584 [main] INFO  com.vip.file.FileApplication - Started FileApplication in 4.157 seconds (JVM running for 5.128)
+2023-06-29 00:35:02.181 [http-nio-9555-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-29 00:35:02.181 [http-nio-9555-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-29 00:35:02.186 [http-nio-9555-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2023-06-29 00:35:07.054 [http-nio-9555-exec-5] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为1
+2023-06-29 00:35:26.028 [pool-1-thread-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"MERGE_VIDEO_ONGOING","info":"6"}
+2023-06-29 00:35:26.032 [pool-1-thread-1] INFO  com.vip.file.quartz.MergeVideoThread - 开始合成视频，通知页面:6
+2023-06-29 00:39:26.417 [main] INFO  com.vip.file.FileApplication - Starting FileApplication on XiaoXinAir14ITL2021 with PID 14856 (D:\javacode\workspace\zg-bank-backend-management\target\classes started by zhongGuan-Mwj in D:\javacode\workspace\zg-bank-backend-management)
+2023-06-29 00:39:26.419 [main] INFO  com.vip.file.FileApplication - The following profiles are active: dev
+2023-06-29 00:39:27.303 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-29 00:39:27.617 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9555 (http)
+2023-06-29 00:39:27.623 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9555"]
+2023-06-29 00:39:27.623 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-29 00:39:27.624 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-06-29 00:39:27.713 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-29 00:39:27.713 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1251 ms
+2023-06-29 00:39:27.779 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-06-29 00:39:27.926 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-06-29 00:39:29.269 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-06-29 00:39:29.704 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-06-29 00:39:29.801 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-29 00:39:30.020 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-06-29 00:39:30.031 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-06-29 00:39:30.055 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-06-29 00:39:30.197 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: viewFilesImageUsingGET_1
+2023-06-29 00:39:30.291 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9555"]
+2023-06-29 00:39:30.311 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9555 (http) with context path ''
+2023-06-29 00:39:30.313 [main] INFO  com.vip.file.FileApplication - Started FileApplication in 4.229 seconds (JVM running for 5.252)
+2023-06-29 00:39:33.251 [http-nio-9555-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-29 00:39:33.251 [http-nio-9555-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-29 00:39:33.256 [http-nio-9555-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2023-06-29 00:39:34.703 [http-nio-9555-exec-5] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"CURRENT_TIME","info":{"currentTime":"2023-06-29 00:39:34","composeTime":"2023-06-29 00:23:03","fileId":"6"}}
+2023-06-29 00:39:42.435 [http-nio-9555-exec-3] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为1
+2023-06-29 00:39:42.437 [http-nio-9555-exec-3] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"CURRENT_TIME","info":{"currentTime":"2023-06-29 00:39:42","composeTime":"","fileId":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}}
+2023-06-29 00:39:51.633 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 接受上传文件事件ID:d2b94fd2-6d71-487a-88f1-239ce4e75fc9
+2023-06-29 00:39:51.634 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 队列长度为:0
+2023-06-29 00:39:51.634 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 发送消息:{"state":1,"type":"EVENT_SUCCESS","info":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}
+2023-06-29 00:39:52.483 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"CURRENT_TIME","info":{"currentTime":"2023-06-29 00:39:52","composeTime":"2023-06-29 00:39:51","fileId":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}}
+2023-06-29 00:39:52.484 [http-nio-9555-exec-6] INFO  com.vip.file.service.impl.FileServiceImpl - 第一个文件上传完毕，向前端发送合成时间：
+2023-06-29 00:39:53.427 [http-nio-9555-exec-5] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"EVENT_SUCCESS","info":""}
+2023-06-29 00:40:11.550 [http-nio-9555-exec-8] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为2
+2023-06-29 00:40:16.363 [http-nio-9555-exec-9] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为3
+2023-06-29 00:40:26.019 [pool-1-thread-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"MERGE_VIDEO_ONGOING","info":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}
+2023-06-29 00:40:26.020 [pool-1-thread-1] INFO  com.vip.file.quartz.MergeVideoThread - 开始合成视频，通知页面:d2b94fd2-6d71-487a-88f1-239ce4e75fc9
+2023-06-29 00:42:30.832 [main] INFO  com.vip.file.FileApplication - Starting FileApplication on XiaoXinAir14ITL2021 with PID 8024 (D:\javacode\workspace\zg-bank-backend-management\target\classes started by zhongGuan-Mwj in D:\javacode\workspace\zg-bank-backend-management)
+2023-06-29 00:42:30.834 [main] INFO  com.vip.file.FileApplication - The following profiles are active: dev
+2023-06-29 00:42:31.686 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-29 00:42:31.978 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9555 (http)
+2023-06-29 00:42:31.985 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9555"]
+2023-06-29 00:42:31.985 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-29 00:42:31.985 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-06-29 00:42:32.069 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-29 00:42:32.070 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1167 ms
+2023-06-29 00:42:32.129 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-06-29 00:42:32.267 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-06-29 00:42:33.546 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-06-29 00:42:33.968 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-06-29 00:42:34.069 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-29 00:42:34.268 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-06-29 00:42:34.279 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-06-29 00:42:34.302 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-06-29 00:42:34.422 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: viewFilesImageUsingGET_1
+2023-06-29 00:42:34.510 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9555"]
+2023-06-29 00:42:34.541 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9555 (http) with context path ''
+2023-06-29 00:42:34.543 [main] INFO  com.vip.file.FileApplication - Started FileApplication in 4.022 seconds (JVM running for 5.01)
+2023-06-29 00:42:41.894 [http-nio-9555-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-29 00:42:41.895 [http-nio-9555-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-29 00:42:41.900 [http-nio-9555-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2023-06-29 00:42:41.944 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为1
+2023-06-29 00:42:46.794 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为2
+2023-06-29 00:43:05.018 [pool-1-thread-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"MERGE_VIDEO_ONGOING","info":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}
+2023-06-29 00:43:05.021 [pool-1-thread-1] INFO  com.vip.file.quartz.MergeVideoThread - 开始合成视频，通知页面:d2b94fd2-6d71-487a-88f1-239ce4e75fc9
+2023-06-29 00:43:46.862 [main] INFO  com.vip.file.FileApplication - Starting FileApplication on XiaoXinAir14ITL2021 with PID 3200 (D:\javacode\workspace\zg-bank-backend-management\target\classes started by zhongGuan-Mwj in D:\javacode\workspace\zg-bank-backend-management)
+2023-06-29 00:43:46.864 [main] INFO  com.vip.file.FileApplication - The following profiles are active: dev
+2023-06-29 00:43:47.830 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-29 00:43:48.178 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9555 (http)
+2023-06-29 00:43:48.186 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9555"]
+2023-06-29 00:43:48.187 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-29 00:43:48.187 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-06-29 00:43:48.306 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-29 00:43:48.306 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1407 ms
+2023-06-29 00:43:48.381 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-06-29 00:43:48.507 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-06-29 00:43:49.827 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-06-29 00:43:50.288 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-06-29 00:43:50.401 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-29 00:43:50.624 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-06-29 00:43:50.649 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-06-29 00:43:50.682 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-06-29 00:43:50.853 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: viewFilesImageUsingGET_1
+2023-06-29 00:43:50.959 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9555"]
+2023-06-29 00:43:50.979 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9555 (http) with context path ''
+2023-06-29 00:43:50.981 [main] INFO  com.vip.file.FileApplication - Started FileApplication in 4.495 seconds (JVM running for 5.856)
+2023-06-29 00:43:54.564 [http-nio-9555-exec-3] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-29 00:43:54.564 [http-nio-9555-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-29 00:43:54.571 [http-nio-9555-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2023-06-29 00:43:54.618 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为1
+2023-06-29 00:43:59.413 [http-nio-9555-exec-8] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为2
+2023-06-29 00:44:14.020 [pool-1-thread-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"MERGE_VIDEO_ONGOING","info":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}
+2023-06-29 00:44:14.024 [pool-1-thread-1] INFO  com.vip.file.quartz.MergeVideoThread - 开始合成视频，通知页面:d2b94fd2-6d71-487a-88f1-239ce4e75fc9
+2023-06-29 00:45:22.269 [main] INFO  com.vip.file.FileApplication - Starting FileApplication on XiaoXinAir14ITL2021 with PID 3716 (D:\javacode\workspace\zg-bank-backend-management\target\classes started by zhongGuan-Mwj in D:\javacode\workspace\zg-bank-backend-management)
+2023-06-29 00:45:22.271 [main] INFO  com.vip.file.FileApplication - The following profiles are active: dev
+2023-06-29 00:45:23.229 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-29 00:45:23.576 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9555 (http)
+2023-06-29 00:45:23.583 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9555"]
+2023-06-29 00:45:23.583 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-29 00:45:23.583 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-06-29 00:45:23.681 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-29 00:45:23.682 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1374 ms
+2023-06-29 00:45:23.747 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-06-29 00:45:23.869 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-06-29 00:45:25.279 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-06-29 00:45:25.783 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-06-29 00:45:25.904 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-29 00:45:26.143 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-06-29 00:45:26.154 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-06-29 00:45:26.183 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-06-29 00:45:26.313 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: viewFilesImageUsingGET_1
+2023-06-29 00:45:26.404 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9555"]
+2023-06-29 00:45:26.423 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9555 (http) with context path ''
+2023-06-29 00:45:26.425 [main] INFO  com.vip.file.FileApplication - Started FileApplication in 4.56 seconds (JVM running for 5.657)
+2023-06-29 00:45:26.629 [http-nio-9555-exec-5] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-29 00:45:26.630 [http-nio-9555-exec-5] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-29 00:45:26.637 [http-nio-9555-exec-5] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2023-06-29 00:45:26.687 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为1
+2023-06-29 00:45:26.831 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-06-29 00:45:32.930 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为1
+2023-06-29 00:45:59.028 [pool-1-thread-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"MERGE_VIDEO_ONGOING","info":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}
+2023-06-29 00:45:59.029 [pool-1-thread-1] INFO  com.vip.file.quartz.MergeVideoThread - 开始合成视频，通知页面:d2b94fd2-6d71-487a-88f1-239ce4e75fc9
+2023-06-29 00:53:08.841 [main] INFO  com.vip.file.FileApplication - Starting FileApplication on XiaoXinAir14ITL2021 with PID 18780 (D:\javacode\workspace\zg-bank-backend-management\target\classes started by zhongGuan-Mwj in D:\javacode\workspace\zg-bank-backend-management)
+2023-06-29 00:53:08.843 [main] INFO  com.vip.file.FileApplication - The following profiles are active: dev
+2023-06-29 00:53:09.668 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-29 00:53:09.950 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9555 (http)
+2023-06-29 00:53:09.956 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9555"]
+2023-06-29 00:53:09.956 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-29 00:53:09.956 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-06-29 00:53:10.041 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-29 00:53:10.042 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1161 ms
+2023-06-29 00:53:10.100 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-06-29 00:53:10.237 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-06-29 00:53:11.480 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-06-29 00:53:11.907 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-06-29 00:53:12.021 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-29 00:53:12.218 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-06-29 00:53:12.227 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-06-29 00:53:12.251 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-06-29 00:53:12.369 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: viewFilesImageUsingGET_1
+2023-06-29 00:53:12.457 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9555"]
+2023-06-29 00:53:12.476 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9555 (http) with context path ''
+2023-06-29 00:53:12.478 [main] INFO  com.vip.file.FileApplication - Started FileApplication in 3.963 seconds (JVM running for 4.922)
+2023-06-29 00:53:17.366 [http-nio-9555-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-29 00:53:17.366 [http-nio-9555-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-29 00:53:17.372 [http-nio-9555-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2023-06-29 00:53:17.418 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为1
+2023-06-29 00:53:22.829 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为2
+2023-06-29 00:53:37.022 [pool-1-thread-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"MERGE_VIDEO_ONGOING","info":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}
+2023-06-29 00:53:37.025 [pool-1-thread-1] INFO  com.vip.file.quartz.MergeVideoThread - 开始合成视频，通知页面:d2b94fd2-6d71-487a-88f1-239ce4e75fc9
+2023-06-29 00:56:36.253 [main] INFO  com.vip.file.FileApplication - Starting FileApplication on XiaoXinAir14ITL2021 with PID 18508 (D:\javacode\workspace\zg-bank-backend-management\target\classes started by zhongGuan-Mwj in D:\javacode\workspace\zg-bank-backend-management)
+2023-06-29 00:56:36.256 [main] INFO  com.vip.file.FileApplication - The following profiles are active: dev
+2023-06-29 00:56:37.318 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-29 00:56:37.654 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9555 (http)
+2023-06-29 00:56:37.661 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9555"]
+2023-06-29 00:56:37.662 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-29 00:56:37.662 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-06-29 00:56:37.760 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-29 00:56:37.761 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1463 ms
+2023-06-29 00:56:37.828 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-06-29 00:56:37.939 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-06-29 00:56:39.268 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-06-29 00:56:39.713 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-06-29 00:56:39.822 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-29 00:56:40.055 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-06-29 00:56:40.067 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-06-29 00:56:40.095 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-06-29 00:56:40.231 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: viewFilesImageUsingGET_1
+2023-06-29 00:56:40.323 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9555"]
+2023-06-29 00:56:40.342 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9555 (http) with context path ''
+2023-06-29 00:56:40.345 [main] INFO  com.vip.file.FileApplication - Started FileApplication in 4.514 seconds (JVM running for 5.695)
+2023-06-29 00:56:43.347 [http-nio-9555-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-29 00:56:43.347 [http-nio-9555-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-29 00:56:43.354 [http-nio-9555-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2023-06-29 00:56:43.408 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为1
+2023-06-29 00:56:48.900 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为2
+2023-06-29 00:57:21.023 [pool-1-thread-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"MERGE_VIDEO_ONGOING","info":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}
+2023-06-29 00:57:21.026 [pool-1-thread-1] INFO  com.vip.file.quartz.MergeVideoThread - 开始合成视频，通知页面:d2b94fd2-6d71-487a-88f1-239ce4e75fc9
+2023-06-29 00:57:55.217 [pool-1-thread-1] INFO  com.vip.file.utils.MergeVideoUtils - 解码完成，输出文件路径:D:/temp/file-manager/d2b94fd2-6d71-487a-88f1-239ce4e75fc9/dab8a55f-7470-4ffc-9ae7-c2145fd794b6.mp4
+2023-06-29 00:59:30.666 [main] INFO  com.vip.file.FileApplication - Starting FileApplication on XiaoXinAir14ITL2021 with PID 9172 (D:\javacode\workspace\zg-bank-backend-management\target\classes started by zhongGuan-Mwj in D:\javacode\workspace\zg-bank-backend-management)
+2023-06-29 00:59:30.668 [main] INFO  com.vip.file.FileApplication - The following profiles are active: dev
+2023-06-29 00:59:31.489 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-29 00:59:31.770 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9555 (http)
+2023-06-29 00:59:31.776 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9555"]
+2023-06-29 00:59:31.776 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-29 00:59:31.777 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-06-29 00:59:31.858 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-29 00:59:31.858 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1146 ms
+2023-06-29 00:59:31.914 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-06-29 00:59:32.050 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-06-29 00:59:33.339 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-06-29 00:59:33.760 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-06-29 00:59:33.857 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-29 00:59:34.053 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-06-29 00:59:34.064 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-06-29 00:59:34.086 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-06-29 00:59:34.204 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: viewFilesImageUsingGET_1
+2023-06-29 00:59:34.292 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9555"]
+2023-06-29 00:59:34.322 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9555 (http) with context path ''
+2023-06-29 00:59:34.324 [main] INFO  com.vip.file.FileApplication - Started FileApplication in 3.989 seconds (JVM running for 4.964)
+2023-06-29 00:59:37.529 [http-nio-9555-exec-3] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-29 00:59:37.529 [http-nio-9555-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-29 00:59:37.536 [http-nio-9555-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2023-06-29 00:59:37.577 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为1
+2023-06-29 00:59:37.688 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:0
+2023-06-29 00:59:37.744 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为1
+2023-06-29 00:59:44.590 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为2
+2023-06-29 00:59:58.024 [pool-1-thread-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"MERGE_VIDEO_ONGOING","info":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}
+2023-06-29 00:59:58.025 [pool-1-thread-1] INFO  com.vip.file.quartz.MergeVideoThread - 开始合成视频，通知页面:d2b94fd2-6d71-487a-88f1-239ce4e75fc9
+2023-06-29 01:00:24.805 [pool-1-thread-1] INFO  com.vip.file.utils.MergeVideoUtils - 解码完成，输出文件路径:D:/temp/file-manager/d2b94fd2-6d71-487a-88f1-239ce4e75fc9/06601004-c201-4d04-895c-3f1391df63c4.mp4
+2023-06-29 01:00:52.397 [pool-1-thread-1] INFO  com.vip.file.utils.MergeVideoUtils - 解码完成，输出文件路径:D:/temp/file-manager/d2b94fd2-6d71-487a-88f1-239ce4e75fc9/b4fce4a3-e201-4463-9eab-7f297e9afe9d.mp4
+2023-06-29 01:00:52.501 [pool-1-thread-1] INFO  com.vip.file.utils.MergeVideoUtils - -----操作成功:d:/aaaa/ffmpeg.exe -i D:/temp/file-manager/d2b94fd2-6d71-487a-88f1-239ce4e75fc9/06601004-c201-4d04-895c-3f1391df63c4.mp4 -c copy -bsf:v h264_mp4toannexb -f mpegts D:\temp\video\inputb1e19855-8cee-4745-9e36-e754b3758213.ts
+2023-06-29 01:00:52.591 [pool-1-thread-1] INFO  com.vip.file.utils.MergeVideoUtils - -----操作成功:d:/aaaa/ffmpeg.exe -i D:/temp/file-manager/d2b94fd2-6d71-487a-88f1-239ce4e75fc9/b4fce4a3-e201-4463-9eab-7f297e9afe9d.mp4 -c copy -bsf:v h264_mp4toannexb -f mpegts D:\temp\video\inputb8107180-b889-4319-a9af-176ed056b315.ts
+2023-06-29 01:00:52.743 [pool-1-thread-1] INFO  com.vip.file.utils.MergeVideoUtils - -----操作成功:d:/aaaa/ffmpeg.exe -i  concat:D:\temp\video\inputb1e19855-8cee-4745-9e36-e754b3758213.ts|D:\temp\video\inputb8107180-b889-4319-a9af-176ed056b315.ts| -c copy -bsf:a aac_adtstoasc -movflags +faststart D:\temp\video\20230629/11a2545f-544d-4fd7-b3ab-d142d47bca78.mp4
+2023-06-29 01:00:52.748 [pool-1-thread-1] INFO  com.vip.file.quartz.MergeVideoThread - 视频合成成功,合成视频访问路径:/video/20230629/11a2545f-544d-4fd7-b3ab-d142d47bca78.mp4
+2023-06-29 01:00:52.754 [pool-1-thread-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"MERGE_VIDEO_SUCCESS","info":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}
+2023-06-29 22:15:06.496 [main] INFO  com.vip.file.FileApplication - Starting FileApplication on XiaoXinAir14ITL2021 with PID 18324 (D:\javacode\workspace\zg-bank-backend-management\target\classes started by zhongGuan-Mwj in D:\javacode\workspace\zg-bank-backend-management)
+2023-06-29 22:15:06.498 [main] INFO  com.vip.file.FileApplication - The following profiles are active: dev
+2023-06-29 22:15:07.458 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-29 22:15:07.781 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9555 (http)
+2023-06-29 22:15:07.787 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9555"]
+2023-06-29 22:15:07.788 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-29 22:15:07.788 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-06-29 22:15:07.874 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-29 22:15:07.874 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1338 ms
+2023-06-29 22:15:07.933 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-06-29 22:15:08.090 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-06-29 22:15:09.495 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-06-29 22:15:13.617 [Druid-ConnectionPool-Create-260620222] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/vip_file_manager?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2B8, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1643)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1709)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2715)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 9 common frames omitted
+2023-06-29 22:15:17.653 [Druid-ConnectionPool-Create-260620222] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/vip_file_manager?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2B8, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1643)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1709)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2715)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 9 common frames omitted
+2023-06-29 22:15:17.654 [Druid-ConnectionPool-Create-260620222] INFO  com.alibaba.druid.pool.DruidAbstractDataSource - {dataSource-1} failContinuous is true
+2023-06-29 22:46:54.080 [main] INFO  com.vip.file.FileApplication - Starting FileApplication on XiaoXinAir14ITL2021 with PID 17792 (D:\javacode\workspace\zg-bank-backend-management\target\classes started by zhongGuan-Mwj in D:\javacode\workspace\zg-bank-backend-management)
+2023-06-29 22:46:54.082 [main] INFO  com.vip.file.FileApplication - The following profiles are active: dev
+2023-06-29 22:46:54.899 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-29 22:46:55.201 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9555 (http)
+2023-06-29 22:46:55.207 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9555"]
+2023-06-29 22:46:55.207 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-29 22:46:55.208 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-06-29 22:46:55.284 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-29 22:46:55.284 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1168 ms
+2023-06-29 22:46:55.341 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-06-29 22:46:55.445 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-06-29 22:46:56.467 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-06-29 22:46:56.908 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-06-29 22:46:57.008 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-29 22:46:57.223 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-06-29 22:46:57.236 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-06-29 22:46:57.259 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-06-29 22:46:57.381 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: viewFilesImageUsingGET_1
+2023-06-29 22:46:57.475 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9555"]
+2023-06-29 22:46:57.492 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9555 (http) with context path ''
+2023-06-29 22:46:57.494 [main] INFO  com.vip.file.FileApplication - Started FileApplication in 3.723 seconds (JVM running for 4.714)
+2023-06-29 23:16:39.699 [http-nio-9555-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-29 23:16:39.699 [http-nio-9555-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-29 23:16:39.705 [http-nio-9555-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2023-06-29 23:16:39.954 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为1
+2023-06-29 23:17:30.172 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为2
+2023-06-29 23:17:30.215 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"CURRENT_TIME","info":{"currentTime":"2023-06-29 23:17:30","composeTime":"2023-06-29 00:39:51","fileId":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}}
+2023-06-29 23:17:34.234 [http-nio-9555-exec-4] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"CURRENT_TIME","info":{"currentTime":"2023-06-29 23:17:34","composeTime":"2023-06-29 00:39:52","fileId":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}}
+2023-06-29 23:17:34.255 [http-nio-9555-exec-3] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-06-29 23:17:34.301 [http-nio-9555-exec-9] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为2
+2023-06-29 23:17:34.303 [http-nio-9555-exec-9] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"CURRENT_TIME","info":{"currentTime":"2023-06-29 23:17:34","composeTime":"","fileId":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}}
+2023-06-29 23:17:40.574 [http-nio-9555-exec-8] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-06-29 23:17:43.164 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为2
+2023-06-29 23:17:43.166 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"CURRENT_TIME","info":{"currentTime":"2023-06-29 23:17:43","composeTime":"","fileId":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}}
+2023-06-29 23:17:55.894 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 接受上传文件事件ID:d2b94fd2-6d71-487a-88f1-239ce4e75fc9
+2023-06-29 23:17:55.895 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 队列长度为:0
+2023-06-29 23:17:55.895 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 发送消息:{"state":1,"type":"EVENT_SUCCESS","info":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}
+2023-06-29 23:17:55.896 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 发送消息:{"state":1,"type":"EVENT_SUCCESS","info":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}
+2023-06-29 23:17:56.731 [http-nio-9555-exec-7] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"CURRENT_TIME","info":{"currentTime":"2023-06-29 23:17:56","composeTime":"2023-06-29 23:17:56","fileId":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}}
+2023-06-29 23:17:56.732 [http-nio-9555-exec-7] INFO  com.vip.file.service.impl.FileServiceImpl - 第一个文件上传完毕，向前端发送合成时间：
+2023-06-29 23:17:57.427 [http-nio-9555-exec-5] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"EVENT_SUCCESS","info":""}
+2023-06-29 23:18:03.290 [http-nio-9555-exec-8] INFO  com.vip.file.websocket.service.WebSocketServer - 有一连接关闭！当前在线人数为:1
+2023-06-29 23:18:03.377 [http-nio-9555-exec-6] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为2
+2023-06-29 23:19:56.508 [main] INFO  com.vip.file.FileApplication - Starting FileApplication on XiaoXinAir14ITL2021 with PID 16860 (D:\javacode\workspace\zg-bank-backend-management\target\classes started by zhongGuan-Mwj in D:\javacode\workspace\zg-bank-backend-management)
+2023-06-29 23:19:56.510 [main] INFO  com.vip.file.FileApplication - The following profiles are active: dev
+2023-06-29 23:19:57.333 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-29 23:19:57.626 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9555 (http)
+2023-06-29 23:19:57.631 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9555"]
+2023-06-29 23:19:57.632 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-29 23:19:57.632 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-06-29 23:19:57.717 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-29 23:19:57.717 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1143 ms
+2023-06-29 23:19:57.777 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-06-29 23:19:57.918 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-06-29 23:19:59.277 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2023-06-29 23:19:59.736 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-06-29 23:19:59.832 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-29 23:20:00.033 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-06-29 23:20:00.042 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-06-29 23:20:00.067 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-06-29 23:20:00.181 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: viewFilesImageUsingGET_1
+2023-06-29 23:20:00.270 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9555"]
+2023-06-29 23:20:00.289 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9555 (http) with context path ''
+2023-06-29 23:20:00.291 [main] INFO  com.vip.file.FileApplication - Started FileApplication in 4.091 seconds (JVM running for 5.108)
+2023-06-29 23:20:05.361 [http-nio-9555-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-29 23:20:05.361 [http-nio-9555-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-29 23:20:05.369 [http-nio-9555-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2023-06-29 23:20:05.406 [http-nio-9555-exec-1] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为1
+2023-06-29 23:20:13.342 [http-nio-9555-exec-2] INFO  com.vip.file.websocket.service.WebSocketServer - 有新连接加入！当前在线人数为2
+2023-06-29 23:20:37.036 [pool-1-thread-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"MERGE_VIDEO_ONGOING","info":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}
+2023-06-29 23:20:37.039 [pool-1-thread-1] INFO  com.vip.file.quartz.MergeVideoThread - 开始合成视频，通知页面:d2b94fd2-6d71-487a-88f1-239ce4e75fc9
+2023-06-29 23:21:02.718 [pool-1-thread-1] INFO  com.vip.file.utils.MergeVideoUtils - 解码完成，输出文件路径:D:/temp/file-manager/d2b94fd2-6d71-487a-88f1-239ce4e75fc9/bb0d9a82-689a-44ea-a592-76b5a874915b.mp4
+2023-06-29 23:21:29.049 [pool-1-thread-1] INFO  com.vip.file.utils.MergeVideoUtils - 解码完成，输出文件路径:D:/temp/file-manager/d2b94fd2-6d71-487a-88f1-239ce4e75fc9/3f6911f8-d79d-4d45-8e50-ca652ef6867f.mp4
+2023-06-29 23:21:29.152 [pool-1-thread-1] INFO  com.vip.file.utils.MergeVideoUtils - -----操作成功:D:\home\user\wuxibank\java\ffmpeg.exe\ffmpeg6789952252248580635 -i D:/temp/file-manager/d2b94fd2-6d71-487a-88f1-239ce4e75fc9/bb0d9a82-689a-44ea-a592-76b5a874915b.mp4 -c copy -bsf:v h264_mp4toannexb -f mpegts D:/temp/video/inputc4c9bbeb-6471-4de0-9fec-84b0df8742f4.ts
+2023-06-29 23:21:29.240 [pool-1-thread-1] INFO  com.vip.file.utils.MergeVideoUtils - -----操作成功:D:\home\user\wuxibank\java\ffmpeg.exe\ffmpeg6789952252248580635 -i D:/temp/file-manager/d2b94fd2-6d71-487a-88f1-239ce4e75fc9/3f6911f8-d79d-4d45-8e50-ca652ef6867f.mp4 -c copy -bsf:v h264_mp4toannexb -f mpegts D:/temp/video/input591b1cf6-2af0-44c8-934d-90745537c18b.ts
+2023-06-29 23:21:29.397 [pool-1-thread-1] INFO  com.vip.file.utils.MergeVideoUtils - -----操作成功:D:\home\user\wuxibank\java\ffmpeg.exe\ffmpeg6789952252248580635 -i  concat:D:/temp/video/inputc4c9bbeb-6471-4de0-9fec-84b0df8742f4.ts|D:/temp/video/input591b1cf6-2af0-44c8-934d-90745537c18b.ts| -c copy -bsf:a aac_adtstoasc -movflags +faststart D:/temp/video/20230629/5395ac40-d6ac-4664-af8b-ed7cc49475c0.mp4
+2023-06-29 23:21:29.407 [pool-1-thread-1] INFO  com.vip.file.quartz.MergeVideoThread - 视频合成成功,合成视频访问路径:/video/20230629/5395ac40-d6ac-4664-af8b-ed7cc49475c0.mp4
+2023-06-29 23:21:29.413 [pool-1-thread-1] INFO  com.vip.file.websocket.service.WebSocketServer - 推送数据:{"state":1,"type":"MERGE_VIDEO_SUCCESS","info":"d2b94fd2-6d71-487a-88f1-239ce4e75fc9"}

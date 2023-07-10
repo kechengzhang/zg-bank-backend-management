@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vip.file.mapper.SyntheticVideoMapper">
+ <select id="querySyntheticVideo" resultType="com.vip.file.model.vo.SyntheticVideoVO">
+      select id,SUBSTRING_INDEX(filePath,'/',-1) as fileName,filePath as fullName,synthesis_date as syntheticTime,bank_branch_name as bankName
+      from upload_file
+      <where>
+          <if test="syntheticVideoQuery.beginTime != null and syntheticVideoQuery.beginTime != '' ">
+              and DATE_FORMAT(create_time, '%Y-%m-%d')>=#{syntheticVideoQuery.beginTime}
+          </if>
+          <if test="syntheticVideoQuery.endTime != null and syntheticVideoQuery.endTime != '' ">
+              and DATE_FORMAT(create_time, '%Y-%m-%d') <![CDATA[ <= ]]> #{syntheticVideoQuery.endTime}
+          </if>
+          <if test="syntheticVideoQuery.bankBranchId != null and syntheticVideoQuery.bankBranchId != ''">
+             and bank_branch_id =#{syntheticVideoQuery.bankBranchId}
+          </if>
+           and isCompose =1
+      </where>
+
+ </select>
+    <delete id="deleteSyntheticVideo">
+        delete from  upload_file
+        <where>
+            id in
+            <foreach collection="list" item="id" separator="," open="(" close=")">
+                #{id}
+            </foreach>
+        </where>
+    </delete>
+    <select id="querySyntheticVideoFailure" resultType="com.vip.file.model.vo.SyntheticVideoFailureVO">
+        select GROUP_CONCAT(tf.file_name) as fileName,
+        DATE_FORMAT(uf.synthesis_date,'%Y-%m-%d') as synthesisTime,tf.bank_branch_name as bankName
+        from  tb_files tf
+        left join upload_file uf on tf.target_id=uf.id
+        <where>
+            uf.isCompose=0
+            and uf.create_time >= #{time}
+            <if test="beginTime != null and beginTime != ''">
+                and uf.occurTime >= #{beginTime}
+            </if>
+            <if test="endTime != null and endTime != ''">
+                and uf.occurTime &lt;= #{endTime}
+            </if>
+        </where>
+        group by  tf.target_id
+    </select>
+</mapper>

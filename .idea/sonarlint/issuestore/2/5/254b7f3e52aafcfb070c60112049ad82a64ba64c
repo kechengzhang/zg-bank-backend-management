@@ -1,0 +1,24 @@
+
+l
+java:S3027G"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(Òâ³ûÿÿÿÿ8¢Úı‘1
+^	java:S125–"<This block of commented-out lines of code should be removed.(Âº¢ÿÿÿÿÿ8¢Úı‘1
+[
+java:S1155K">Use isEmpty() to check whether the collection is empty or not.(•ñ¥À8¢Úı‘1
+F
+java:S1148¶"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¢Úı‘1
+F
+java:S1148ë"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¢Úı‘1
+v
+java:S2293J"YReplace the type specification in this constructor call with the diamond operator ("<>").(¨¸úó8¢Úı‘1
+G
+java:S1068+"*Remove this unused "prefix" private field.(ÖŒÛÃ8¢Úı‘1
+X	java:S125p"<This block of commented-out lines of code should be removed.(ÔÕ³Í8¢Úı‘1
+{
+java:S2293L"YReplace the type specification in this constructor call with the diamond operator ("<>").(Çêşÿÿÿÿÿ8¢Úı‘1
+h
+java:S3252C"FUse static access with "com.alibaba.fastjson.JSON" for "toJavaObject".(ÀœĞ•úÿÿÿÿ8¢Úı‘1
+M
+java:S3740«"/Provide the parametrized type for this generic.(áˆùÊ8¢Úı‘1
+^	java:S125¥"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8¢Úı‘1
+q
+java:S4042™"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(ë“«øÿÿÿÿ8¢Úı‘1

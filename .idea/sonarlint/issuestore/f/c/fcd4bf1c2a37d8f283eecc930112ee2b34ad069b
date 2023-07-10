@@ -1,0 +1,23 @@
+
+u
+java:S1149E"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰
+T
+java:S4973,"9Use the "equals" method if value comparison was intended.(öÂØúÿÿÿÿ
+u
+java:S1149	"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰
+N
+java:S4973""9Use the "equals" method if value comparison was intended.(¼‚œ[
+P
+java:S1854G"5Remove this useless assignment to local variable "s".(ç†ñéøÿÿÿÿ
+u
+java:S1149!"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰
+^
+java:S1192""IDefine a constant instead of duplicating this literal "targetId" 3 times.(¼‚œ[
+u
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰
+u
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰
+A
+java:S1481G"&Remove this unused "s" local variable.(ç†ñéøÿÿÿÿ
+u
+java:S1149*"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰

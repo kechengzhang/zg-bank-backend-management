@@ -1,0 +1,11 @@
+
+\
+java:S3252,"FUse static access with "com.alibaba.fastjson.JSON" for "toJSONString".(âÙ¡…
+`
+java:S3027c"JPut single-quotes around '&' to use the faster "lastIndexOf(char)" method.(ÔðŠÖ
+a
+java:S3252l"FUse static access with "com.alibaba.fastjson.JSON" for "toJSONString".(á‘õ’üÿÿÿÿ
+2
+java:S1643a"Use a StringBuilder instead.(ÈêÆŽ
+\
+java:S32523"FUse static access with "com.alibaba.fastjson.JSON" for "toJSONString".(âÙ¡…

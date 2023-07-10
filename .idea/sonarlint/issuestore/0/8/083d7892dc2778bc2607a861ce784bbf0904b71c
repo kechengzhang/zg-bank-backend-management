@@ -1,0 +1,11 @@
+
+b
+java:S3252‚"DUse static access with "com.alibaba.fastjson.JSON" for "parseArray".(î„äÎ8¥Ã˜Œ1
+Q
+java:S37401"/Provide the parametrized type for this generic.(­ó¿Œÿÿÿÿÿ8¥Ã˜Œ1
+g
+java:S3252>"EUse static access with "com.alibaba.fastjson.JSON" for "parseObject".(ÌÓŞüÿÿÿÿ8¥Ã˜Œ1
+l
+java:S32520"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(ŸçÓ¸8¥Ã˜Œ1
+‚
+java:S14881"`Immediately return this expression instead of assigning it to the temporary variable "pageData".(­ó¿Œÿÿÿÿÿ8¥Ã˜Œ1

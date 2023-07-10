@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vip.file.mapper.UploadFileMapper">
+    
+    <resultMap type="com.vip.file.model.entity.UploadFileDo" id="UploadFileResult">
+        <result property="id"    column="id"    />
+        <result property="occurPlace"    column="occurPlace"    />
+        <result property="occurTime"    column="occurTime"    />
+        <result property="remark"    column="remark"    />
+        <result property="filePath"    column="filePath"    />
+        <result property="event"    column="event"    />
+        <result property="status"    column="status"    />
+        <result property="isCompose"    column="isCompose"    />
+        <result property="ip"    column="ip"    />
+        <result property="port"    column="port"    />
+        <result property="bankBranchName"    column="bank_branch_name"    />
+        <result property="bankBranchId"    column="bank_branch_id"    />
+    </resultMap>
+
+    <sql id="selectUploadFileVo">
+        select id, occurPlace, occurTime, create_time,remark,filePath,status,event,isCompose,
+         port,ip
+         from upload_file
+    </sql>
+
+    <select id="selectUploadFileList" parameterType="com.vip.file.model.entity.UploadFileDo" resultMap="UploadFileResult">
+        <include refid="selectUploadFileVo"/>
+        <where>  
+            <if test="occurPlace != null  and occurPlace != ''"> and occurPlace = #{occurPlace}</if>
+            <if test="occurTime != null "> and occurTime = #{occurTime}</if>
+            <if test="filePath != null "> and filePath = #{filePath}</if>
+            <if test="status != null "> and status = #{status}</if>
+            <if test="event != null "> and event = #{event}</if>
+             and isCompose = 0
+        </where>
+    </select>
+    
+    <select id="selectUploadFileById" parameterType="String" resultMap="UploadFileResult">
+        <include refid="selectUploadFileVo"/>
+        where id = #{id}
+    </select>
+        
+    <!--<insert id="insertUploadFile" parameterType="com.vip.file.model.entity.UploadFileDo" useGeneratedKeys="true" keyProperty="id">-->
+        <!--insert into upload_file-->
+        <!--<trim prefix="(" suffix=")" suffixOverrides=",">-->
+            <!--<if test="occurPlace != null">occurPlace,</if>-->
+            <!--<if test="occurTime != null">occurTime,</if>-->
+            <!--<if test="remark != null">remark,</if>-->
+            <!--<if test="filePath != null">filePath,</if>-->
+            <!--<if test="status != null">status,</if>-->
+         <!--</trim>-->
+        <!--<trim prefix="values (" suffix=")" suffixOverrides=",">-->
+            <!--<if test="occurPlace != null">#{occurPlace},</if>-->
+            <!--<if test="occurTime != null">#{occurTime},</if>-->
+            <!--<if test="remark != null">#{remark},</if>-->
+            <!--<if test="filePath != null">#{filePath},</if>-->
+            <!--<if test="status != null">#{status},</if>-->
+         <!--</trim>-->
+        <!--<selectKey keyProperty="id" resultType="java.lang.Long">-->
+            <!--select last_insert_id() as id-->
+        <!--</selectKey>-->
+    <!--</insert>-->
+
+    <update id="updateUploadFile" parameterType="com.vip.file.model.entity.UploadFileDo">
+        update upload_file
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="occurPlace != null">occurPlace = #{occurPlace},</if>
+            <if test="occurTime != null">occurTime = #{occurTime},</if>
+            <if test="remark != null">remark = #{remark},</if>
+            <if test="filePath != null">filePath = #{filePath},</if>
+            <if test="status != null">status = #{status},</if>
+            <if test="isCompose != null">isCompose = #{isCompose},</if>
+            <if test="bankBranchId != null">bank_branch_id = #{bankBranchId},</if>
+            <if test="bankBranchName != null">bank_branch_name = #{bankBranchName},</if>
+            <if test="synthesisDate != null">synthesis_date = #{synthesisDate},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteUploadFileById" parameterType="String">
+        delete from upload_file where id = #{id}
+    </delete>
+
+    <delete id="deleteUploadFileByIds" parameterType="String">
+        delete from upload_file where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+   <select id="selectFilesById" resultType="com.vip.file.model.entity.Files">
+       select * from tb_files
+       where target_id = #{id}
+       and status = 1
+       order by file_name asc
+   </select>
+</mapper>

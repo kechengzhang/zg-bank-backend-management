@@ -1,0 +1,8 @@
+
+§
+java:S1319>"‰The type of the "uploadFileMap" object should be an interface such as "ConcurrentMap" rather than the implementation "ConcurrentHashMap".(¥œ±¦8îš‘‰1
+T
+java:S1128
+"2Remove this unused import 'javax.print.DocFlavor'.(ÍØƒïúÿÿÿÿ8Š›¯´1
+¯
+java:S1319B"ŒThe type of the "composeStatusMap" object should be an interface such as "ConcurrentMap" rather than the implementation "ConcurrentHashMap".(ªÓ‹Ëÿÿÿÿÿ8îš‘‰1

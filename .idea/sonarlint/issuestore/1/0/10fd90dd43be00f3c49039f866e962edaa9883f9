@@ -1,0 +1,12 @@
+
+_	java:S899’"BDo something with the "boolean" value returned by "setExecutable".(¹†¾Ñ8à¶¿–1
+}
+java:S1488”"`Immediately return this expression instead of assigning it to the temporary variable "filePath".(¿êõ8à¶¿–1
+}
+java:S1488F"`Immediately return this expression instead of assigning it to the temporary variable "fileSize".(ÛÿöÓ8à¶¿–1
+c
+java:S3027B"FPut single-quotes around '=' to use the faster "indexOf(char)" method.(™“—ï8à¶¿–1
+{
+java:S2293,"YReplace the type specification in this constructor call with the diamond operator ("<>").(Îöï¨şÿÿÿÿ8à¶¿–1
+F
+java:S1148˜"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8à¶¿–1

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vip.file.mapper.FileVerificationRulesMapper">
+   <insert id="saveFileVerificationRules">
+       insert into file_name_verification_rule
+       (verification_name,first_file,last_file,is_use,verification_rule)
+       values
+       (#{fileVerificationRulesDTO.verificationName},#{fileVerificationRulesDTO.firstFile},
+       #{fileVerificationRulesDTO.lastFile} ,#{fileVerificationRulesDTO.use},#{fileVerificationRulesDTO.verificationRule}  )
+   </insert>
+    <select id="queryFileVerificationRules" resultType="com.vip.file.model.vo.FileVerificationRulesVO">
+      select  id,verification_name,first_file,last_file,create_time as generationTime,verification_rule,
+        case
+        when is_use =1 then '启用'
+        else '禁用'
+        end status
+        from file_name_verification_rule
+      <where>
+          <if test="fileVerificationRulesQuery.verificationName != null and fileVerificationRulesQuery.verificationName != ''">
+              verification_name like concat ('%','${fileVerificationRulesQuery.verificationName}','%')
+          </if>
+          <if test="fileVerificationRulesQuery.beginTime != null and fileVerificationRulesQuery.beginTime != ''">
+             and  DATE_FORMAT(create_time, '%Y-%m-%d') >=#{fileVerificationRulesQuery.beginTime}
+          </if>
+          <if test="fileVerificationRulesQuery.endTime != null and fileVerificationRulesQuery.endTime != ''">
+             and DATE_FORMAT(create_time, '%Y-%m-%d') <![CDATA[ <= ]]> #{fileVerificationRulesQuery.endTime}
+          </if>
+          <if test="fileVerificationRulesQuery.use != null">
+              and is_use=#{fileVerificationRulesQuery.use}
+          </if>
+      </where>
+    </select>
+    <update id="updateFileVerificationRules">
+      update file_name_verification_rule
+      <set>
+          <if test="fileVerificationRulesDTO.verificationName != null and fileVerificationRulesDTO.verificationName != ''">
+              ,verification_name =#{fileVerificationRulesDTO.verificationName}
+          </if>
+          <if test="fileVerificationRulesDTO.lastFile != null and fileVerificationRulesDTO.lastFile != ''">
+              ,last_file =#{fileVerificationRulesDTO.lastFile}
+          </if>
+          <if test="fileVerificationRulesDTO.firstFile != null and fileVerificationRulesDTO.firstFile != ''">
+              ,first_file =#{fileVerificationRulesDTO.firstFile}
+          </if>
+          <if test="fileVerificationRulesDTO.use != null ">
+              ,is_use =#{fileVerificationRulesDTO.use}
+          </if>
+          <if test="fileVerificationRulesDTO.verificationRule != null and fileVerificationRulesDTO.verificationRule != ''">
+              ,verification_rule =#{fileVerificationRulesDTO.verificationRule}
+          </if>
+      </set>
+        <where>
+            id=#{fileVerificationRulesDTO.id}
+        </where>
+    </update>
+    <delete id="deleteFileVerificationRules">
+        delete from file_name_verification_rule
+        <where>
+            id in
+            <foreach collection="ids" item="id" separator="," open="(" close=")">
+                #{id}
+            </foreach>
+        </where>
+    </delete>
+    <select id="queryVerificationName" resultType="java.lang.String">
+        select verification_name from file_name_verification_rule
+        <where>
+            verification_name #{name}
+        </where>
+    </select>
+</mapper>

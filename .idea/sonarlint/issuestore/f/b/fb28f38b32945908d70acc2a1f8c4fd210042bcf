@@ -1,0 +1,24 @@
+
+D
+java:S1075¶"&Remove this hard-coded path-delimiter.(‹¦®8ªîÛ‰1
+]	java:S899À";Do something with the "boolean" value returned by "delete".(¼·áüÿÿÿÿ8ªîÛ‰1
+q
+java:S4042À"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(¼·áüÿÿÿÿ8ªîÛ‰1
+R
+java:S1128"5Remove this unused import 'java.text.ParseException'.(ñ®ï•8ªîÛ‰1
+X	java:S899¸";Do something with the "boolean" value returned by "delete".(ç‡8ªîÛ‰1
+]	java:S899™";Do something with the "boolean" value returned by "delete".(²Œ­ûÿÿÿÿ8ªîÛ‰1
+y	java:S116<"XRename this field "compose_rules" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£”×—ùÿÿÿÿ8ªîÛ‰1
+R
+java:S3740Ÿ"/Provide the parametrized type for this generic.(â–…ÿÿÿÿÿ8ªîÛ‰1
+r
+java:S3252Ó"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(€š’ñüÿÿÿÿ8ªîÛ‰1
+q
+java:S4042¼"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(²Œ­ûÿÿÿÿ8ªîÛ‰1
+l
+java:S4042¸"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(ç‡8ªîÛ‰1
+Y	java:S125µ"<This block of commented-out lines of code should be removed.(ì»Ï8ªîÛ‰1
+x	java:S1169"WRename this field "compose_time" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËŠÍ¼ûÿÿÿÿ8ªîÛ‰1
+q
+java:S4042™"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(²Œ­ûÿÿÿÿ8ªîÛ‰1
+]	java:S899¼";Do something with the "boolean" value returned by "delete".(²Œ­ûÿÿÿÿ8ªîÛ‰1

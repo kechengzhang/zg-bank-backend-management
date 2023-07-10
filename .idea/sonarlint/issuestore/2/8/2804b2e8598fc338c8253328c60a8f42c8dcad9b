@@ -1,0 +1,13 @@
+
+X	java:S125@"<This block of commented-out lines of code should be removed.(Ş¥ÉÎ8®«ÌÙ‘1
+R
+java:S1854D"5Remove this useless assignment to local variable "a".(¾ùÁâ8®«ÌÙ‘1
+H
+java:S1481E"&Remove this unused "b" local variable.(´Êğùÿÿÿÿ8®«ÌÙ‘1
+W
+java:S1854E"5Remove this useless assignment to local variable "b".(´Êğùÿÿÿÿ8®«ÌÙ‘1
+C
+java:S1481D"&Remove this unused "a" local variable.(¾ùÁâ8®«ÌÙ‘1
+_
+java:S1075€"ARefactor your code to get this URI from a customizable parameter.(Îªø™8®«ÌÙ‘1
+V	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(ûÜ¾8®«ÌÙ‘1

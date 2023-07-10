@@ -1,0 +1,28 @@
+
+y	java:S116F"XRename this field "compose_rules" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£”×—ùÿÿÿÿ8È‰Ñ’1
+F
+java:S1148Â"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÌÊ³Ù1
+s	java:S117½"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÌ¢¨şÿÿÿÿ8ÌÊ³Ù1
+R
+java:S3740¿"/Provide the parametrized type for this generic.(¯Ú»ÿÿÿÿÿ8ÌÊ³Ù1
+k
+java:S1871ß"MThis branch's code block is the same as the block for the branch on line 221.(‹ñøƒ8ÌÊ³Ù1
+L
+java:S3740~"/Provide the parametrized type for this generic.(ÆÇëÆ8•üÉ”1
+q
+java:S3252O"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".( ÊÜÄúÿÿÿÿ8•üÉ”1
+[	java:S106À"9Replace this use of System.out or System.err by a logger.(“Øÿ¼øÿÿÿÿ8ÌÊ³Ù1
+^	java:S125¯"<This block of commented-out lines of code should be removed.(«Ë¸şÿÿÿÿ8Ç‰ûĞ’1
+c
+java:S1128"FRemove this unused import 'com.vip.file.model.vo.CustomCompositionVO'.(³¨°¹8¬’Âû’1
+p
+java:S3776Š"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(¬®àË8•üÉ”1
+^	java:S125§"<This block of commented-out lines of code should be removed.(£‡»Àøÿÿÿÿ8ÁŒüĞ’1
+Y	java:S125Ú"<This block of commented-out lines of code should be removed.(Åª’ë8ÌÊ³Ù1
+N
+java:S1128"1Remove this unused import 'com.google.gson.Gson'.(–§8´¦²Ù1
+E	java:S108")Either remove or fill this block of code.(ğ¤Ğ8•üÉ”1
+R
+java:S3740"/Provide the parametrized type for this generic.(†ÈîÏşÿÿÿÿ8•üÉ”1
+^	java:S125Œ"<This block of commented-out lines of code should be removed.(´à±øùÿÿÿÿ8ÌÊ³Ù1
+X	java:S125}"<This block of commented-out lines of code should be removed.(ååê€8•üÉ”1

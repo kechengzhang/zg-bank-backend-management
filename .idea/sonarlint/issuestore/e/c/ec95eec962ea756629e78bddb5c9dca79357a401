@@ -1,0 +1,9 @@
+
+~
+java:S1488L"aImmediately return this expression instead of assigning it to the temporary variable "ipAddress".(œ¬üÇ8Ê›ŸÑ’1
+Z	java:S106a"9Replace this use of System.out or System.err by a logger.(©şêÜúÿÿÿÿ8¹†í‰‡1
+W	java:S125T"<This block of commented-out lines of code should be removed.(šç¹28¹†í‰‡1
+f
+java:S2095W"IUse try-with-resources or close this "FileChannel" in a "finally" clause.(÷îÊ«8¹†í‰‡1
+E
+java:S1148O"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ò¡ Ñ’1
